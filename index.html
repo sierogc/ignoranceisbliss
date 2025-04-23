@@ -21,27 +21,29 @@ There is an iPhone ringing somewhere.
 
 [[Find the phone|cerca]]
 [[Let it ring|ignora1]]
-
-(set: $soldi to 0)
-(set: $tel to 1)</tw-passagedata><tw-passagedata pid="2" name="cerca" tags="" position="150,800" size="100,100">The iPhone was hidden under the sheets. 
+(set: $soldi to false)
+(set: $tel to true)
+(set: $k to false)
+(set: $kk to false)
+(set: $friends to false)</tw-passagedata><tw-passagedata pid="2" name="cerca" tags="" position="250,825" size="100,100">The iPhone was hidden under the sheets. 
 The screen’s cracked but seems to work. You can see some bad scratches on the back and it&#39;s on 8% of battery. 
 The number calling’s saved as Lore (Work).
 
 [[Answer|conv1]]
 [[Throw the phone aside and continue|ignora1]]
-</tw-passagedata><tw-passagedata pid="3" name="ignora1" tags="" position="375,875" size="100,100">The place is a mess. Looks like no one’s ever cleaned it.
+</tw-passagedata><tw-passagedata pid="3" name="ignora1" tags="" position="475,900" size="100,100">The place is a mess. Looks like no one’s ever cleaned it.
 It’s a studio, with just the kitchen and bathroom.
 You spot the front door and realise you&#39;re in the projects. You remember one of your childhood friend used to live with his mother in the same block.
 
 [[Leave and go to your place|end]]
-[[Turn back and answer the call|conv1.2]]</tw-passagedata><tw-passagedata pid="4" name="conv1" tags="" position="150,925" size="100,100">A distorted voice says:
+[[Turn back and answer the call|conv1.2]]</tw-passagedata><tw-passagedata pid="4" name="conv1" tags="" position="250,950" size="100,100">A distorted voice says:
 
 &#39;Yo, where you at? I’m out here at the park.&#39;
 
 The call ends.
 
 [[Put the phone in your pocket and leave the apartment|stanza]]
-[[Leave the iPhone where you found it and go back to your place|end]]</tw-passagedata><tw-passagedata pid="5" name="stanza" tags="" position="300,1075" size="100,100">The place is a mess. Looks like no one’s ever cleaned it.
+[[Leave the iPhone where you found it and go back to your place|end]]</tw-passagedata><tw-passagedata pid="5" name="stanza" tags="" position="400,1100" size="100,100">The place is a mess. Looks like no one’s ever cleaned it.
 It’s a studio, with just the kitchen and bathroom.
 You spot the front door and realise you&#39;re in the projects. You remember one of your childhood friend used to live with his mother in the same block.
 
@@ -50,13 +52,13 @@ You spot the front door and realise you&#39;re in the projects. You remember one
 The headache is getting worse, but you have some meds in the closet.
 Tonight, the new episode of your favorite Netflix series drops. You watch it, touch yourself and then fall asleep.
 
-[[Restart|start]]</tw-passagedata><tw-passagedata pid="7" name="conv2" tags="" position="200,1300" size="100,100">It&#39;s a voicemail.
+[[Restart|start]]</tw-passagedata><tw-passagedata pid="7" name="conv2" tags="" position="300,1325" size="100,100">It&#39;s a voicemail.
 
 &#39;The number you’re calling can’t be reached. Please, try again later.&#39;
 
 Weird.
 
-[[Leave the flat|esci]]</tw-passagedata><tw-passagedata pid="8" name="esci" tags="" position="425,1300" size="100,100">You hear a buzz. 
+[[Leave the flat|esci]]</tw-passagedata><tw-passagedata pid="8" name="esci" tags="" position="525,1325" size="100,100">You hear a buzz. 
 A new message from a number saved as Lore2.
 
 Lore 18/11 (Monday) 16:21:05
@@ -104,7 +106,7 @@ He nods.
 [[Approach him|incontro]]
 [[Change direction|parco3]]
 
-(set: $soldi to 15)</tw-passagedata><tw-passagedata pid="16" name="conv1.2" tags="" position="150,1075" size="100,100">The iPhone was hidden under the sheets. 
+(set: $soldi to true)</tw-passagedata><tw-passagedata pid="16" name="conv1.2" tags="" position="250,1100" size="100,100">The iPhone was hidden under the sheets. 
 The screen’s cracked but seems to work. You can see some bad scratches on the back and it&#39;s on 8% of battery.
 The number calling’s saved as Lore (Work). 
 A distorted voice says:
@@ -114,7 +116,7 @@ A distorted voice says:
 The call ends.
 
 [[Call back Lore (Work)|conv2.2]]
-[[Put the phone in your pocket and leave the apartment|esci]]</tw-passagedata><tw-passagedata pid="17" name="conv2.2" tags="" position="125,1500" size="100,100">It&#39;s a voicemail.
+[[Put the phone in your pocket and leave the apartment|esci]]</tw-passagedata><tw-passagedata pid="17" name="conv2.2" tags="" position="225,1525" size="100,100">It&#39;s a voicemail.
 
 &#39;The number you’re calling can’t be reached. Please, try again later.&#39;
 
@@ -126,15 +128,15 @@ The hood hides most of his face, but you can see deep bags under his eyes.
 
 &#39;What&#39;s up?&#39;
 
-[[Lore?|prisata]]
 [[Everything cool|pok]]
 [[Why’d you call me?|prisata]]
+[[Lore?|prisata]]
 [[Not in the mood|psad]]</tw-passagedata><tw-passagedata pid="19" name="parco3" tags="" position="1050,950" size="100,100">They both track your movements, chuckling. 
 
 &#39;Am I still on your nerve for that situation?&#39;
 
 [[Reach to them|incontro]]
-[[Go to your place|casa2]]</tw-passagedata><tw-passagedata pid="20" name="prisata" tags="" position="1250,550" size="100,100">&#39;Broooooo&#39;
+[[Turn back to your place|casa2]]</tw-passagedata><tw-passagedata pid="20" name="prisata" tags="" position="1250,550" size="100,100">&#39;Broooooo...&#39;
 
 Just a deadass laugh. 
 
@@ -152,7 +154,7 @@ Lore presses his closed fist on your leg.
 He looks at you. Sharp green eyes.
 
 [[Check your pockets|tasche1]]
-[[What’s that supposed to mean?|prisata]]</tw-passagedata><tw-passagedata pid="22" name="psad" tags="" position="1100,675" size="100,100">&#39;Going for the better. This is gas.&#39;
+[[What’s that supposed to mean?|prisata]]</tw-passagedata><tw-passagedata pid="22" name="psad" tags="" position="1100,675" size="100,100">&#39;For the better. This is gas.&#39;
 
 The geezer presses his closed fist on your leg.
 He looks at you. Beautiful sharp green eyes.
@@ -167,37 +169,36 @@ You&#39;ve $soldi euro.
 The headache is getting worse, but you still have some meds in the closet.
 
 [[Trash the iPhone and call it a day|end2]]
-</tw-passagedata><tw-passagedata pid="25" name="compra" tags="" position="1575,400" size="100,100">You give $soldi euro to the plug and receive the blow. 
+</tw-passagedata><tw-passagedata pid="25" name="compra" tags="" position="1575,400" size="100,100">You give $soldi to the plug and receive the blow. 
 
 &#39;Deal. See you at club.&#39;
 
 He takes his baby by the hand and leave. 
 
 [[Continue|offparco]]
+(set: $soldi to false)
+</tw-passagedata><tw-passagedata pid="26" name="telefono" tags="" position="1575,225" size="100,100">You think you hear the link calling you a lame ass something.
+Lore takes you by the shoulder.
 
-(set: $soldi to 0)
-</tw-passagedata><tw-passagedata pid="26" name="telefono" tags="" position="1575,225" size="100,100">You think you hear the chick calling you lame ass something.
-Lore takes you over the shoulder.
-
-&#39;You fun. Do I look like Jesus? Nothing is free. Hand the iPhone and we’re even.&quot;
+You definitely lost the plot. This what I get for showin’ up? Hand the iPhone and we’re even.&quot;
 
 [[Do as he says|telefono2]]
 [[Sorry but I can&#39;t|telefono1]]
-</tw-passagedata><tw-passagedata pid="27" name="telefono1" tags="" position="1575,75" size="100,100">&#39;No nose candy for you then. Let&#39;s leave. Fucking freaks.&#39;
+</tw-passagedata><tw-passagedata pid="27" name="telefono1" tags="" position="1575,75" size="100,100">&#39;No nose candy for you then. Let&#39;s leave. Fucking freak.&#39;
 
 The couple walk off. You feel stupid. 
 
-[[Go home|casa3]]</tw-passagedata><tw-passagedata pid="28" name="telefono2" tags="" position="1750,350" size="100,100">&#39;Are you serious? This good only for making lines.&#39; 
+[[Go home|casa3]]</tw-passagedata><tw-passagedata pid="28" name="telefono2" tags="" position="1750,350" size="100,100">&#39;You take pics with this? This scrap good only for making lines.&#39; 
 
-He takes the iPhone and gift the blow.
+He takes the iPhone and pass the strip.
 
-&#39;See you later. Club. Be straight, okay?&#39;
+&#39;See you later. Club. Lock in, ok?&#39;
 
 They leave.
 
 [[Continue|offparco]]
-
-(set: $tel to 0)</tw-passagedata><tw-passagedata pid="29" name="casa3" tags="" position="875,325" size="100,100">You left the park and got home. Today was not your call. 
+(set: $tel to false)
+</tw-passagedata><tw-passagedata pid="29" name="casa3" tags="" position="875,325" size="100,100">You left the park and got home. Today was not your call. 
 You still have a broken iPhone and $soldi euro though. 
 
 [[Continue|end3]]
@@ -209,7 +210,101 @@ You&#39;ve $soldi euro.
 The plug opens his fist. There&#39;s a piece of grid paper folded into a strip.
 
 [[Pay|compra]]
-[[Sorry but I&#39;m out|telefono]]</tw-passagedata><tw-passagedata pid="32" name="offparco" tags="" position="1725,575" size="100,100"></tw-passagedata></tw-storydata>
+[[Sorry but I&#39;m out|telefono]]</tw-passagedata><tw-passagedata pid="32" name="offparco" tags="" position="1725,575" size="100,100">[[Clear your mind|botta]]
+[[Get yourself a coffe|bar]]</tw-passagedata><tw-passagedata pid="33" name="botta" tags="" position="1575,675" size="100,100">You are all alone.
+You crush the rock at the bus stop. 
+
+[[Do your job|botta2]]</tw-passagedata><tw-passagedata pid="34" name="bar" tags="" position="2000,475" size="100,100">You enter a bar. 
+They all stare at you.
+It&#39;s the way you look or the way you walk?
+Either way doesn&#39;t matter
+
+[[I need water|water]]
+[[Do you make espresso?|espresso]]</tw-passagedata><tw-passagedata pid="35" name="botta2" tags="" position="1575,825" size="100,100">You feel good.
+
+[[Another bump|botta3]]</tw-passagedata><tw-passagedata pid="36" name="botta3" tags="" position="1575,975" size="100,100">You start to get weird. Maybe the dissociative time frame is set.
+
+[[Finish what you started|khole]]
+[[Stop]]
+(set: $k to true)</tw-passagedata><tw-passagedata pid="37" name="khole" tags="" position="1575,1100" size="100,100">You sniff the last line. Close your eyes for a second. 
+You are sure of floating even if you feel nauseous. 
+You can&#39;t move your legs or your arms. You simply stand still.
+
+[[Vomit]]</tw-passagedata><tw-passagedata pid="38" name="Stop" tags="" position="1825,975" size="100,100">A tall and skinny woman is right in your face.
+
+&#39;Spare a coin?&#39;
+
+[[No... yes... sorry|continue]]
+(if: $tel is true)[You give her the iPhone and [[continue|continuetel]]]
+(if: $soldi is true)[You give her $soldi euro and [[continue|continuesoldi]]]
+</tw-passagedata><tw-passagedata pid="39" name="Vomit" tags="" position="1575,1225" size="100,100">You bend over and vomit some sort of pale liquid. No sound, no fragrance.
+You are back from the trip.
+
+[[Time for the club|club]]
+[[Call it a day|casa4]]</tw-passagedata><tw-passagedata pid="40" name="club" tags="" position="1750,2050" size="100,100"></tw-passagedata><tw-passagedata pid="41" name="casa4" tags="" position="975,1650" size="100,100">You made it back without saying a single word. You didn&#39;t recognize a face. Can’t even remember the road.
+There is your father at the door.
+
+[[Hi dad|end4]]
+[[Skip him and sleep|end4.2]]</tw-passagedata><tw-passagedata pid="42" name="end4.2" tags="" position="75,1800" size="100,100">The headache is the only thing you can experience now. 
+You take the meds from the closet and play some podcast. 
+You will not move from your bedroom for two days minimum. 
+
+[[Restart|start]]</tw-passagedata><tw-passagedata pid="43" name="end4" tags="" position="825,1975" size="100,100">&#39;What is this MDMA you keep talking about?&#39;
+
+[[What?!|end4.2]]</tw-passagedata><tw-passagedata pid="44" name="continue" tags="" position="2025,825" size="100,100">You catch the junkie mutter something but your brain is too lost to make sense of it.
+You&#39;re stumbling a bit, legs heavy, thoughts looping and melting into nothing. 
+You have no clue of where you’re headed. You follow an invisible line. 
+Your stomach twists a little. Maybe you’re hungry. Maybe not. Hard to tell.
+
+[[Go to a bar|bar2]]</tw-passagedata><tw-passagedata pid="45" name="continuetel" tags="" position="2025,1025" size="100,100">&#39;What the fuck is this?&#39;
+
+You&#39;re stumbling a bit, legs heavy, thoughts looping and melting into nothing. 
+You have no clue of where you’re headed. You follow an invisible line. 
+Your stomach twists a little. Maybe you’re hungry. Maybe not. Hard to tell.
+
+[[Go to a bar|bar2]]
+(set: $tel to false)</tw-passagedata><tw-passagedata pid="46" name="continuesoldi" tags="" position="2025,925" size="100,100">&#39;Thanks!&#39;
+
+You&#39;re stumbling a bit, legs heavy, thoughts looping and melting into nothing. 
+You have no clue of where you’re headed. You follow an invisible line. 
+Your stomach twists a little. Maybe you’re hungry. Maybe not. Hard to tell.
+
+[[Go to a bar|bar2]]
+(set: $soldi to false)</tw-passagedata><tw-passagedata pid="47" name="water" tags="" position="2000,600" size="100,100">There is no free water. 
+
+[[Do you make espresso?|espresso]]</tw-passagedata><tw-passagedata pid="48" name="espresso" tags="" position="2150,475" size="100,100">&#39;You are in a bar.&#39;
+
+They look at you wrong. This is terrible.
+
+(if: $soldi is true)[ [[Order]] ]
+(else:)[You are broke.
+
+[[Sorry, my bad|continue3]]]
+</tw-passagedata><tw-passagedata pid="49" name="bar2" tags="" position="2350,975" size="100,100">You see some people in a easy car, honking at you. 
+They are friends.
+[[Get in|macchina]]</tw-passagedata><tw-passagedata pid="50" name="Order" tags="" position="2150,600" size="100,100">The coffe tastes like shit.
+
+[[Leave this place|continue3]]
+(set: $kk to true)</tw-passagedata><tw-passagedata pid="51" name="continue3" tags="" position="2325,775" size="100,100">(if: $kk is true)[[[Clean your nose|bottafake]]]
+(else:)[[[Clean your nose|botta]]]
+[[Forget it|bar2]]</tw-passagedata><tw-passagedata pid="52" name="bottafake" tags="" position="2525,775" size="100,100">There is no nose candy. You lost it.
+Um strange.
+
+[[Life goes on|bar2]]
+</tw-passagedata><tw-passagedata pid="53" name="macchina" tags="" position="2350,1150" size="100,100">Something feels wrong. It will gets worse.
+
+(if: $k is false)[[[Anybody wants a line?|bottaauto]]](else:)[&#39;God sent you to bless the squad. We are trying to get some Ket for tonight. You in?
+
+(if: $soldi is true)[[[Let&#39;s go|compra2]]](else:)[[[I ain&#39;t got no cash on me bro|continueclub]]]</tw-passagedata><tw-passagedata pid="54" name="bottaauto" tags="" position="2475,1375" size="100,100">You are in the backseat of the car. 
+Lore was right. This is gas.
+
+[[Bring the car to the club|club]]
+(set: $k to true)
+(set: $friends to true)
+</tw-passagedata><tw-passagedata pid="55" name="continueclub" tags="" position="2225,1375" size="100,100">They drop you off.
+
+[[Move towards the club|club]]
+[[You are tired|casa4]]</tw-passagedata><tw-passagedata pid="56" name="compra2" tags="" position="2625,1175" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
