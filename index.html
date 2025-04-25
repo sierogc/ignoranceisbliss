@@ -220,24 +220,24 @@ He is waiting for your next move.
 
 [[Where is my wallet?|telefono]]
 [[Pay|compra]]</tw-passagedata><tw-passagedata pid="32" name="offparco" tags="" position="1725,575" size="100,100">[[Enjoy what you have|botta]]
-[[Get yourself a coffe|bar]]</tw-passagedata><tw-passagedata pid="33" name="botta" tags="" position="1575,675" size="100,100">You are all alone. You crush the rock at the bus stop. 
+[[Get yourself a coffe|bar]]</tw-passagedata><tw-passagedata pid="33" name="botta" tags="" position="1575,675" size="100,100">You are all alone. 
+You crush the rock at the bus stop. 
 
 [[Do your job|botta2]]</tw-passagedata><tw-passagedata pid="34" name="botta2" tags="" position="1575,825" size="100,100">It feels good.
-You feel at ease.
 
 [[Another one|botta3]]</tw-passagedata><tw-passagedata pid="35" name="botta3" tags="" position="1575,975" size="100,100">You start to get weird. Maybe the dissociative time frame is set.
 
-[[Finish what you started|khole]]
 [[Stop]]
+[[Finish what you started|khole]]
 (set: $k to true)</tw-passagedata><tw-passagedata pid="36" name="khole" tags="" position="1575,1100" size="100,100">You sniff the last line. 
-Close your eyes for a second. You are sure of floating even if you feel nauseous. 
+You are sure of floating even if you feel nauseous. 
 Can&#39;t move your legs or your arms. You simply stand still.
 
 [[Vomit]]</tw-passagedata><tw-passagedata pid="37" name="Stop" tags="" position="1825,975" size="100,100">You look up and a tall, skinny woman is staring, right in your face.
 
 //Spare a coin?//
 
-[[Yes... I mean no... don&#39;t bother me|continue]]
+[[Yes... I mean, no...|continue]]
 (if: $tel is true)[[[You give her the iPhone|continuetel]]]
 (if: $soldi is true)[[[You give her the cash|continuesoldi]]]
 </tw-passagedata><tw-passagedata pid="38" name="Vomit" tags="" position="1575,1225" size="100,100">You bend over and vomit some sort of pale liquid. No sound, no fragrance.
@@ -256,19 +256,19 @@ You take the meds from the closet and play some podcast. You will not move from 
 
 You left the MacBook unlocked, again. He read your chat.
 
-[[What?!|end4.2]]</tw-passagedata><tw-passagedata pid="43" name="continue" tags="" position="2025,825" size="100,100">You catch the junkie mutter something but your brain is too messed up to make up anything.
+[[Leave me alone!|end4.2]]</tw-passagedata><tw-passagedata pid="43" name="continue" tags="" position="2025,825" size="100,100">You catch the junkie mutter something but your brain is too messed up to make up anything.
 You&#39;re stumbling, legs heavy. Not a single thought that makes sense.
 You have no clue of where you’re headed. 
 Your stomach twists a little. Maybe you’re hungry. Maybe not. Hard to tell.
 
-[[Go to a bar|bar2]]
+[[Continue|bar2]]
 (set: $fame to true)</tw-passagedata><tw-passagedata pid="44" name="continuetel" tags="" position="2025,1025" size="100,100">//What is this?//
 
 Even the junkie hates on your iPhone.
 You have no clue of where you’re headed. 
 Your stomach twists a little. Maybe you’re hungry. Maybe not. Hard to tell.
 
-[[Go to a bar|bar2]]
+[[Continue|bar2]]
 (set: $tel to false)
 (set: $fame to true)</tw-passagedata><tw-passagedata pid="45" name="continuesoldi" tags="" position="2025,925" size="100,100">//Thanks.//
 
@@ -276,11 +276,11 @@ You&#39;re stumbling, legs heavy.
 You have no clue of where you’re headed.
 Your stomach twists a little. Maybe you’re hungry. Maybe not. Hard to tell.
 
-[[Go to a bar|bar2]]
+[[Continue|bar2]]
 (set: $soldi to false)
 (set: $fame to true)</tw-passagedata><tw-passagedata pid="46" name="water" tags="" position="2000,600" size="100,100">There is no free water. The barista’s looking at you like you have just landed.
 
-[[Do you make espresso?|espresso]]</tw-passagedata><tw-passagedata pid="47" name="espresso" tags="" position="2150,475" size="100,100">//You are in a bar. We must do espresso.//
+[[Do you make espresso?|espresso]]</tw-passagedata><tw-passagedata pid="47" name="espresso" tags="" position="2150,475" size="100,100">//This is a coffe. We must do espresso.//
 
 They look at you wrong. This is terrible.
 
@@ -302,15 +302,17 @@ How&#39;s that even possible?
 
 [[What!?|bar2]]
 [[Life goes on|bar2]]
-(set: $k to true)</tw-passagedata><tw-passagedata pid="52" name="macchina" tags="" position="2350,1150" size="100,100">Something feels wrong. It surely will gets worse.
+(set: $k to true)</tw-passagedata><tw-passagedata pid="52" name="macchina" tags="" position="2350,1150" size="100,100">The car smells like ashtray. 
+They&#39;re all dressed in black, except the driver who has a pink hat.
+Something feels wrong. It surely will gets worse.
 
-//Heaven sent you to bless the day. We are trying to get some Ket for tonight. Join us.//
+//Heaven sent you to bless the day. We are trying to get some Ket for tonight. You in?//
 
 (if: $k is false)[[[Have some of mine|bottaauto]]](else-if: $soldi is true)[[[Let&#39;s go|compra2]]](else-if: $soldi is false)[[[I ain&#39;t got no cash on me|continueclub]]]</tw-passagedata><tw-passagedata pid="53" name="bottaauto" tags="" position="2475,1375" size="100,100">You are in the backseat. 
 One hit each, passing the credit card back and forth.
 Lore was right. This is the best.
 
-[[Let&#39;s go to the club|club]]
+[[The club tonight is gonna turn wild|club]]
 (set: $k to true)
 (set: $friends to true)
 </tw-passagedata><tw-passagedata pid="54" name="continueclub" tags="" position="2225,1375" size="100,100">They drop you off.
@@ -322,6 +324,7 @@ They are with two girls you have never seen before. They looks kinda cute.
 
 //You know we are not used to this. Lead the way please.//
 
+The driver gives you some bills.
 They started this habit because of you and your parties. That&#39;s not your problem if they persisted though. 
 
 [[Show the way|projects]]</tw-passagedata><tw-passagedata pid="56" name="ignora2" tags="" position="600,950" size="100,100">The place is a mess. Looks like no one’s ever cleaned it.
@@ -338,10 +341,10 @@ The call ends.
 [[Call back Lore (Work)|conv2.2]]
 [[Put the phone in your pocket and leave the apartment|esci]]</tw-passagedata><tw-passagedata pid="58" name="ignore" tags="" position="1800,1300" size="100,100">//Sure. You. Are. Busy.//
 
-You bet that they will show themselves anyway. 
+You bet they&#39;ll get back sooner or later.
 
-[[You move towards the club|club]]
 [[I want to check something|check]]
+[[You move towards the club|club]]
 
 
 
@@ -349,21 +352,23 @@ You bet that they will show themselves anyway.
 They all stare at you. It&#39;s the way you look or the way you act? Either way doesn&#39;t matter.
 
 [[I need water|water]]
-[[Do you make espresso?|espresso]]</tw-passagedata><tw-passagedata pid="60" name="check" tags="" position="2300,1900" size="100,100"></tw-passagedata><tw-passagedata pid="61" name="projects" tags="" position="2825,1150" size="100,100">These blocks all look the same. 
+[[Do you make espresso?|espresso]]</tw-passagedata><tw-passagedata pid="60" name="check" tags="" position="2300,1900" size="100,100"></tw-passagedata><tw-passagedata pid="61" name="projects" tags="" position="2825,1150" size="100,100">These blocks looks the same. 
 You all walk down a narrow hallway. You notices faces glaring at you from behind gated windows, and someone else seems to be trailing you from another corridor, keeping your pace.
 
 //Stop. Who are you looking for?//
 
 Some guy cut the way. 
 
-[[My friend told me to come here|comprare]]</tw-passagedata><tw-passagedata pid="62" name="comprare" tags="" position="2825,1300" size="100,100">//This way.//
+[[We are going to meet a friend|comprare]]</tw-passagedata><tw-passagedata pid="62" name="comprare" tags="" position="2825,1300" size="100,100">//This way. Your friends must wait here.//
 
 The spotter opens a door that shows a stairs going down to a basement. 
 The room is dim. The smell of smoke and something heavier hits you as soon as you step in. 
-The pusher is playing FIFA. Next to him, an egirl is slowly smoking a joint while lying on a sofa. A pitbull, sitting beside her, observe you. 
+The pusher is playing FIFA. Next to him, an egirl is slowly smoking a joint while lying on a sofa. A pitbull, sitting beside her, guards the door. 
 On the table there are tons of plastic bags and various weed buds in amounts you couldn&#39;t even begin to count.
 
-[[Pay]]</tw-passagedata><tw-passagedata pid="63" name="Pay" tags="" position="2825,1425" size="100,100">//That was intense.//
+[[Pay]]</tw-passagedata><tw-passagedata pid="63" name="Pay" tags="" position="2825,1425" size="100,100">The driver is waiting for change, then realises it&#39;s useless. You flash the stash to the group.
+
+//How was it?//
 
 They have what they wanted. 
 You are back in the car. 
