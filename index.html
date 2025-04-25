@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play index.</tw-noscript></noscript></tw-story>
-<tw-storydata name="index" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="119A8DED-7D52-4911-90BE-C2D2BCB2B83F" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story{
+<tw-storydata name="index" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="119A8DED-7D52-4911-90BE-C2D2BCB2B83F" options="" tags="" zoom="0.3" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story{
   font-family:Arial;
   font-size:14px;
   text-align:<==>, justify;  
@@ -227,7 +227,7 @@ You crush the rock at the bus stop.
 
 [[Do your job|botta2]]</tw-passagedata><tw-passagedata pid="34" name="botta2" tags="" position="1575,825" size="100,100">It feels good.
 
-[[Another one|botta3]]</tw-passagedata><tw-passagedata pid="35" name="botta3" tags="" position="1575,975" size="100,100">You start to get weird. Maybe the dissociative time frame is set.
+[[Another one|botta3]]</tw-passagedata><tw-passagedata pid="35" name="botta3" tags="" position="1575,975" size="100,100">It has definitely kicked in. The dissociative time frame is set.
 
 [[Finish what you started|khole]]
 [[Stop]]
@@ -239,14 +239,15 @@ Can&#39;t move your legs or arms. You simply stand still.
 
 //Spare a coin?//
 
+You are not ready for an interaction yet. 
+
 [[Yes... I mean, no...|continue]]
-(if: $tel is true)[[[Give her the iPhone|continuetel]]]
-(if: $soldi is true)[[[Give her the money|continuesoldi]]]
+(if: $tel is true)[[[Give her the iPhone|continuetel]]](if: $soldi is true)[[[Give her the money|continuesoldi]]]
 </tw-passagedata><tw-passagedata pid="38" name="Vomit" tags="" position="1575,1325" size="100,100">You bend over and puke some sort of pale liquid. No sound, no fragrance.
 You are back from the trip.
 
 [[Time for the club|club]]
-[[You had enough|casa4]]</tw-passagedata><tw-passagedata pid="39" name="club" tags="" position="1750,1950" size="100,100"></tw-passagedata><tw-passagedata pid="40" name="casa4" tags="" position="975,1650" size="100,100">You made it back without saying a single word. 
+[[You had enough|casa4]]</tw-passagedata><tw-passagedata pid="39" name="club" tags="" position="1525,1875" size="100,100"></tw-passagedata><tw-passagedata pid="40" name="casa4" tags="" position="975,1650" size="100,100">You made it back without saying a single word. 
 You don&#39;t remember a face. Can’t even recall the road.
 There is your father at the door.
 
@@ -308,10 +309,10 @@ How&#39;s that even possible?
 They&#39;re all dressed in black, except the driver who has a pink hat.
 Something feels wrong. It surely will gets worse.
 
-//Heaven sent you to bless the day. We are trying to get some Ket for tonight. You in?//
+//Heaven sent you to bless the day. We are trying to get some boost for tonight. You in?//
 
 (if: $k is false)[[[Have some of mine|bottaauto]]](else-if: $soldi is true)[[[Let&#39;s go|compra2]]](else-if: $soldi is false)[[[I ain&#39;t got no cash on me|continueclub]]]</tw-passagedata><tw-passagedata pid="53" name="bottaauto" tags="" position="2475,1375" size="100,100">You are in the backseat. 
-One hit each, passing the credit card back and forth.
+One hit each, passing the idcard back and forth.
 Lore was right. This is the best.
 
 [[The club tonight is gonna turn wild|club]]
@@ -326,8 +327,8 @@ They are with two girls you have never seen before. They looks kinda cute.
 
 //You know we are not used to this. Lead the way please.//
 
-The driver gives you some bills.
-They started this habit because of you and your parties. That&#39;s not your problem if they persisted though. 
+The diver gives you some bills. Not enough, but you will add your spare. 
+They started this habit because of you and your parties. You feel guilty. That&#39;s not your problem if they persisted though. 
 
 [[Show the way|projects]]</tw-passagedata><tw-passagedata pid="56" name="ignora2" tags="" position="600,950" size="100,100">The place is a mess. Looks like no one’s ever cleaned it.
 It’s a studio, with just the kitchen and bathroom.
@@ -343,7 +344,7 @@ The call ends.
 [[Call back Lore (Work)|conv2.2]]
 [[Put the phone in your pocket and leave the apartment|esci]]</tw-passagedata><tw-passagedata pid="58" name="ignore" tags="" position="1800,1300" size="100,100">//Sure. You. Are. Busy.//
 
-You bet they&#39;ll get back sooner or later.
+You can bet they&#39;ll get back sooner or later.
 
 [[I want to check something|check]]
 [[You move towards the club|club]]
@@ -354,8 +355,8 @@ You bet they&#39;ll get back sooner or later.
 They all stare at you. It&#39;s the way you look or the way you act? Either way doesn&#39;t matter.
 
 [[Do you make espresso?|espresso]]
-[[I need water|water]]</tw-passagedata><tw-passagedata pid="60" name="check" tags="" position="2300,1900" size="100,100"></tw-passagedata><tw-passagedata pid="61" name="projects" tags="" position="2825,1150" size="100,100">These blocks all looks the same. 
-You walk down a narrow hallway. You notices faces glaring at you from behind gated windows, and someone else seems to be trailing you from another corridor, keeping your pace.
+[[I need water|water]]</tw-passagedata><tw-passagedata pid="60" name="check" tags="" position="2225,1800" size="100,100"></tw-passagedata><tw-passagedata pid="61" name="projects" tags="" position="2825,1150" size="100,100">These blocks all looks the same. 
+You walk down a narrow hallway. You notices faces glaring at you from behind gated windows, and someone else trailing you from another corridor, keeping your pace.
 
 //Stop. Who are you looking for?//
 
@@ -368,7 +369,8 @@ The room is dim. The smell of food and something heavier hits you as soon as you
 The pusher is playing FIFA. Next to him, an egirl is slowly smoking a joint while lying on a sofa. A pitbull, sitting beside her, guards the door. 
 On the table there are tons of plastic bags and various weed buds in amounts you couldn&#39;t even begin to count.
 
-[[Ask for the horse magic|Pay]]</tw-passagedata><tw-passagedata pid="63" name="Pay" tags="" position="2825,1425" size="100,100">The driver is waiting for change, then realises it&#39;s useless. You flash the stash to the group.
+[[Lore asked me to get some Ket|Pay2]]</tw-passagedata><tw-passagedata pid="63" name="Pay" tags="" position="2750,1625" size="100,100">You go back and the group is in the exact same position you left them.
+The driver is waiting for change, then realises it&#39;s useless. You flash the stash.
 
 //How was it?//
 
@@ -376,13 +378,27 @@ You are back in the car. They have what they wanted.
 
 [[Let&#39;s save it for the night|club]]
 [[Do one for the plot|bottaauto]]
-(set: $k to false)</tw-passagedata><tw-passagedata pid="64" name="Try to puke" tags="" position="1400,1175" size="100,100">You try to open your eyes, but they’re too heavy, like always. Each time you tell yourself you’ll manage, you end up failing.
+(set: $k to false)</tw-passagedata><tw-passagedata pid="64" name="Try to puke" tags="" position="1400,1175" size="100,100">You try to open your eyes, but they’re too heavy, like always. Each time you tell yourself you’ll manage end in failure.
 Beams of light slowly drift closer, then pull away. They look so real that you could probably touch them, if you weren’t completely paralyzed.
 You think about your mom. Your father. You remember your first crush. Then the first time you had sex. It feels like you’re almost there doing it over again.
 You wish this moment could last forever.
 Your stomach hurts.
 
-[[Vomit]]</tw-passagedata></tw-storydata>
+[[Vomit]]</tw-passagedata><tw-passagedata pid="65" name="Pay2" tags="" position="2900,1475" size="100,100">//Lore?//
+
+The pitbull jumps off the couch and almost reaches your feet before the owner calls him back.
+
+//Lore? Yeah, sure.//
+
+A kid who looks no older than fifteen approaches you from a corner. You hadn’t seen him before. He looks at your hat and asks.
+
+//Cash.//
+
+You pass him everything you&#39;ve got, and within the same gesture, he gives you a small plastic bag.
+The guy just scored on FIFA. 
+The egirl gets up and heads to the bathroom. She looks at you without making any facial expression. She barely seems alive.
+
+[[You should go|Pay]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
