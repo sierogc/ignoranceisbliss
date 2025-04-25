@@ -66,15 +66,16 @@ Weird.
 [[Leave the flat|esci]]</tw-passagedata><tw-passagedata pid="8" name="esci" tags="" position="525,1325" size="100,100">You hear a buzz. 
 A new message from a number saved as Lore2.
 
-Lore 18/11 (Monday) 16:21:05
+Lore2 (current-date:)
 *Wyd?*
 
-Lore 18/11 (Monday) 16:21:09
+Lore2 (current-date:)
 *Im at park*
 
 [[Head to the nearest park|parco]]
+[[This is getting ridiculous|casa1]]
 [[Open contacts|rubrica]]
-[[This is getting ridiculous. Go home|casa1]]</tw-passagedata><tw-passagedata pid="9" name="parco" tags="" position="850,1225" size="100,100">You’re at the yard.
+</tw-passagedata><tw-passagedata pid="9" name="parco" tags="" position="850,1225" size="100,100">You’re at the yard.
 
 [[Explore|parco2]]
 [[Check your alerts|rubrica]]
@@ -85,13 +86,15 @@ Lore (Work) is calling.
 
 [[Pick the call|conv3]]
 [[Trash the iPhone and call it a day|end2]]
-</tw-passagedata><tw-passagedata pid="11" name="conv3" tags="" position="825,775" size="100,100">//I am done wasting time...bring your ass here.//
+</tw-passagedata><tw-passagedata pid="11" name="conv3" tags="" position="825,775" size="100,100">A familiar voice. 
 
-Beep. You got yourself in trouble.
+//I am done wasting time... bring your ass here.//
+
+Beep. Sounds like trouble.
 
 [[Head to the park|parco]]
 [[Knock it off|end2]]
-(set: $lore to true)</tw-passagedata><tw-passagedata pid="12" name="end2" tags="" position="500,475" size="100,100">You drop the iPhone out the window and head to your bed. Pretty sure you hear the crack of the hit.
+(set: $lore to true)</tw-passagedata><tw-passagedata pid="12" name="end2" tags="" position="500,475" size="100,100">You drop the iPhone out the window and head to your bed. Pretty sure you hear the crash of the impact.
 You take a shower, drink a coke zero, read a book and eventually fall asleep. 
 
 [[Restart|start]]</tw-passagedata><tw-passagedata pid="13" name="rubrica" tags="" position="825,1475" size="100,100">The touchscreen is fried. 
@@ -101,7 +104,7 @@ You can only preview stuff or tap some icons. That’s all.
 
 
 </tw-passagedata><tw-passagedata pid="14" name="parco2" tags="" position="1125,1350" size="100,100">You go back and forth around the perimeter. Every now and then some runner pass by.
-You glance at the screen and it’s (current-time:). Today is (weekday:). The meteo brings no good news.
+You glance at the screen and it’s (current-time:). The meteo brings no good news. Today is not at all a (weekday:).
 Lore (Work) is calling, but the iPhone dies after the first ring. Junk. 
 
 [[Keep walking|parcogen]]
@@ -135,8 +138,8 @@ The hood hides most of his face, but you can see deep bags under his eyes.
 
 You sit.
 
-[[All good|pok]]
 [[Not in the mood today|psad]]
+[[All good|pok]]
 [[Why’d you call me?|prisata]]
 </tw-passagedata><tw-passagedata pid="19" name="parco3" tags="" position="1050,950" size="100,100">They both track your movements, chuckling. 
 
@@ -145,7 +148,7 @@ You sit.
 [[Walk over|incontro]]
 [[He up to no good. Go back home|casa2]]</tw-passagedata><tw-passagedata pid="20" name="prisata" tags="" position="1250,550" size="100,100">//Damn.//
 
-Pause and then a dead laugh. 
+Pause and a dead laugh. 
 
 //You need to relax.//
 
@@ -154,7 +157,7 @@ The plug opens his fist. There&#39;s a piece of grid paper folded into a strip.
 //So? You still cooked from last night?//
 
 [[Check your pockets|tasche]]
-[[Sorry but I have to watch my sis|casa2]]</tw-passagedata><tw-passagedata pid="21" name="pok" tags="" position="1375,675" size="100,100">//Are you sure? You lowkey need a face-lift.//
+[[Sorry but I have to rush home|casa2]]</tw-passagedata><tw-passagedata pid="21" name="pok" tags="" position="1375,675" size="100,100">//Are you sure? You lowkey need a face-lift.//
 
 The girl is silent.
 Lore presses his closed fist on your leg.
@@ -209,7 +212,7 @@ They leave.
 [[Continue|offparco]]
 (set: $tel to false)
 </tw-passagedata><tw-passagedata pid="29" name="casa3" tags="" position="875,325" size="100,100">You left the park and got home. It&#39;s one of those days.
-You still have a broken iPhone and some bills though. 
+You still have a broken iPhone and some bills.
 
 [[Continue|end3]]
 </tw-passagedata><tw-passagedata pid="30" name="end3" tags="" position="475,325" size="100,100">You take a shower, eat some gelato and close your eyes.
