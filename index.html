@@ -32,7 +32,8 @@ There is an iPhone ringing somewhere.
 (set: $kk to false)
 (set: $friends to false)
 (set: $lore to false)
-(set: $fame to false)</tw-passagedata><tw-passagedata pid="2" name="cerca" tags="" position="225,825" size="100,100">The iPhone was hidden under the sheets. 
+(set: $fame to false)
+(set: $sigarette to 0)</tw-passagedata><tw-passagedata pid="2" name="cerca" tags="" position="225,825" size="100,100">The iPhone was hidden under the sheets. 
 Screen’s cracked but seems to work. You can see some bad scratches on the back and it&#39;s on 8% of battery. 
 The number calling’s saved as Lore (Work).
 
@@ -152,10 +153,10 @@ Pause. Fake laugh.
 
 The plug opens his fist. There&#39;s a piece of grid paper folded into a strip.
 
-//You still cooked from last night?//
+//Still cooked from last night?//
 
 [[Check your pockets|tasche]]
-[[I forgot something at home|casa2]]</tw-passagedata><tw-passagedata pid="21" name="pok" tags="" position="1375,675" size="100,100">//Are you sure? You lowkey need a face-lift.//
+[[I forgot something at home|casa2]]</tw-passagedata><tw-passagedata pid="21" name="pok" tags="" position="1375,675" size="100,100">//Bet. You lowkey need a face-lift.//
 
 The girl is silent.
 Lore presses his closed fist on your leg.
@@ -264,10 +265,10 @@ You have no clue of where you’re headed.
 Your stomach twists a little. Maybe you’re hungry. Maybe not. Hard to tell.
 
 [[Continue|bar2]]
-(set: $fame to true)</tw-passagedata><tw-passagedata pid="44" name="continuetel" tags="" position="2025,1025" size="100,100">//What is this?//
+(set: $fame to true)</tw-passagedata><tw-passagedata pid="44" name="continuetel" tags="" position="2025,1025" size="100,100">//This is trash.//
 
 Even the junkie hates on your iPhone. That&#39;s crazy.
-You have no clue of where you’re headed. 
+You have no clue of where your next destination will be. 
 Your stomach twists a little. Maybe you’re hungry. Maybe not. Hard to tell.
 
 [[Continue|bar2]]
@@ -306,10 +307,10 @@ How&#39;s that even possible?
 They&#39;re all dressed in black, except the driver who has a pink hat.
 Something feels wrong. It surely will gets worse.
 
-//Heaven sent you to bless the day. We are trying to get some boost for tonight. You in?//
+//I swear heaven sent you! We are trying to get some boost for tonight. You in?//
 
 (if: $k is false)[[[Have some|bottaauto]]](else-if: $soldi is true)[[[Let&#39;s go|compra2]]](else-if: $soldi is false)[[[I ain&#39;t got cash on me|continueclub]]]</tw-passagedata><tw-passagedata pid="53" name="bottaauto" tags="" position="2475,1375" size="100,100">You are in the backseat. 
-One hit each, passing the idcard back and forth.
+One hit each, passing the credit card back and forth.
 Lore was right. This is the best.
 
 [[The club tonight is gonna turn wild|club]]
@@ -322,10 +323,10 @@ Lore was right. This is the best.
 [[Chill at home|casa4]]</tw-passagedata><tw-passagedata pid="55" name="compra2" tags="" position="2575,1125" size="100,100">You and the squad are back in the projects. 
 They are with two girls you have never seen before. They looks kinda cute. 
 
-//You know we are not used to this. Lead the way please.//
+//We are still not used to this. Can you lead the way?//
 
 The diver gives you some bills. Not enough, but you will add your spare. 
-They started this habit because of you and your parties. You feel guilty. That&#39;s not your problem if they persisted though. 
+They started this habit because of you and your parties. You are guilty. That&#39;s not your problem if they persisted though. 
 
 [[Show the way|projects]]</tw-passagedata><tw-passagedata pid="56" name="ignora2" tags="" position="600,950" size="100,100">The place is a mess. Looks like no one’s ever cleaned it.
 It’s a studio, with just the kitchen and bathroom.
@@ -339,9 +340,9 @@ You spot the front door and realise you&#39;re in the projects. You remember one
 The call ends.
 
 [[Call back Lore (Work)|conv2.2]]
-[[Put the phone in your pocket and leave the apartment|esci]]</tw-passagedata><tw-passagedata pid="58" name="ignore" tags="" position="1800,1300" size="100,100">//Sure. You. Are. Busy.//
+[[Put the phone in your pocket and leave the apartment|esci]]</tw-passagedata><tw-passagedata pid="58" name="ignore" tags="" position="1800,1300" size="100,100">//You. Are. Busy. We totally buy that.//
 
-You can bet they&#39;ll get back sooner or later.
+No doubt that they&#39;ll get back sooner or later.
 
 [[I want to check something|check]]
 [[You move towards the club|club]]
@@ -352,7 +353,7 @@ You can bet they&#39;ll get back sooner or later.
 They all stare at you. It&#39;s the way you look or the way you act? Either way doesn&#39;t matter.
 
 [[I need water|water]]
-[[Do you make espresso?|espresso]]</tw-passagedata><tw-passagedata pid="60" name="check" tags="" position="2225,1800" size="100,100"></tw-passagedata><tw-passagedata pid="61" name="projects" tags="" position="2825,1150" size="100,100">These buildings all looks the same. 
+[[Do you make espresso?|espresso]]</tw-passagedata><tw-passagedata pid="60" name="check" tags="" position="2225,1800" size="100,100">You go to the parking lot. </tw-passagedata><tw-passagedata pid="61" name="projects" tags="" position="2825,1150" size="100,100">These buildings all looks the same. 
 You walk down a narrow hallway. You notices faces glaring at you from behind gated windows, and someone else trailing you from another corridor, keeping your pace.
 
 //Stop. Who are you looking for?//
@@ -366,7 +367,7 @@ The room is dim. The smell of food and something heavier hits you as soon as you
 The pusher is playing FIFA. Next to him, an egirl is slowly smoking a joint while lying on a sofa. A pitbull, sitting beside her, guards the door. 
 On the table there are tons of plastic bags and various weed buds in amounts you couldn&#39;t even begin to count.
 
-[[Lore asked me to get some Ket|Pay2]]</tw-passagedata><tw-passagedata pid="63" name="Pay" tags="" position="2750,1625" size="100,100">The group is in the exact same position you left them.
+[[I know Lore|Pay2]]</tw-passagedata><tw-passagedata pid="63" name="Pay" tags="" position="2750,1625" size="100,100">The group is in the exact same position you left them.
 The driver is waiting for change, then realises it&#39;s useless. 
 You flash the stash.
 
@@ -383,19 +384,19 @@ You think about your mom. Your father. You remember your first crush. Then the f
 You wish this moment could last forever.
 Your stomach hurts.
 
-[[Vomit]]</tw-passagedata><tw-passagedata pid="65" name="Pay2" tags="" position="2900,1475" size="100,100">//Lore?//
+[[Throw up|Vomit]]</tw-passagedata><tw-passagedata pid="65" name="Pay2" tags="" position="2900,1475" size="100,100">//Lore?//
 
 The pitbull jumps off the couch and almost reaches your feet before the owner calls him back.
 
-//Lore? Yeah, sure.//
+//Lore? Lorenzo. Yeah.//
 
-A kid who looks no older than fifteen approaches you from a corner. You hadn’t seen him before. He is interested in your hat.
+A kid who looks no older than fifteen approaches you from a corner. You hadn’t seen him before. He looks interested in your hat.
 
 //Cash.//
 
 You pass him everything you&#39;ve got, and within the same gesture, he gives you a small plastic bag.
 The guy just scored on FIFA. 
-The egirl gets up and heads to the bathroom. She looks at you without making any facial expression. She barely seems alive.
+The egirl gets up and heads to the bathroom. She looks at you without making any facial expression. She barely seems from this time and space.
 
 [[You should go|Pay]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
