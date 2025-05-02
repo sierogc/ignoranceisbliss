@@ -34,7 +34,6 @@ There is an iPhone ringing somewhere.
 (set: $kk to false)
 (set: $friends to false)
 (set: $lore to false)
-(set: $fame to false)
 (set: $sigarette to false)</tw-passagedata><tw-passagedata pid="2" name="cerca" tags="" position="225,825" size="100,100"> &lt;==&gt;
 The iPhone was hidden under the sheets. 
 Screen’s cracked but seems to work. You can see some bad scratches on the back and it&#39;s on 8% of battery. 
@@ -293,7 +292,7 @@ You are back from the trip.
 [[Time for the club|club]]
 [[I want to check something|check]]
 
-</tw-passagedata><tw-passagedata pid="39" name="club" tags="" position="1375,1900" size="100,100"></tw-passagedata><tw-passagedata pid="40" name="casa4" tags="" position="975,1650" size="100,100"> &lt;==&gt;
+</tw-passagedata><tw-passagedata pid="39" name="club" tags="" position="1000,2425" size="100,100"></tw-passagedata><tw-passagedata pid="40" name="casa4" tags="" position="975,1650" size="100,100"> &lt;==&gt;
 You made it back without saying a single word. 
 You don&#39;t remember a face. Can’t even recall the road.
 There is your father at the door.
@@ -314,8 +313,7 @@ You&#39;re stumbling, legs heavy. Not a single thought that makes sense.
 You have no clue of where you’re headed. 
 Your stomach twists a little. Maybe you’re hungry. Maybe not. Hard to tell.
 
-[[Continue|bar2]]
-(set: $fame to true)</tw-passagedata><tw-passagedata pid="44" name="continuetel" tags="" position="2025,1075" size="100,100">&lt;==&gt;
+[[Continue|bar2]]</tw-passagedata><tw-passagedata pid="44" name="continuetel" tags="" position="2025,1075" size="100,100">&lt;==&gt;
 //&#39;This is trash!&#39;//
 
 Even the junkie hates on your iPhone. That&#39;s crazy.
@@ -323,8 +321,7 @@ You have no clue of where your next destination will be.
 Your stomach twists a little. Maybe you’re hungry. Maybe not. Hard to tell.
 
 [[Continue|bar2]]
-(set: $tel to false)
-(set: $fame to true)</tw-passagedata><tw-passagedata pid="45" name="continuesoldi" tags="" position="2025,950" size="100,100">&lt;==&gt;
+(set: $tel to false)</tw-passagedata><tw-passagedata pid="45" name="continuesoldi" tags="" position="2025,950" size="100,100">&lt;==&gt;
 //&#39;Thanks.&#39;//
 
 You&#39;re stumbling, legs heavy.
@@ -332,8 +329,7 @@ You have no clue of where you’re headed.
 Your stomach twists a little. Maybe you’re hungry. Maybe not. Hard to tell.
 
 [[Continue|bar2]]
-(set: $soldi to false)
-(set: $fame to true)</tw-passagedata><tw-passagedata pid="46" name="water" tags="" position="2000,600" size="100,100">&lt;==&gt;
+(set: $soldi to false)</tw-passagedata><tw-passagedata pid="46" name="water" tags="" position="2000,600" size="100,100">&lt;==&gt;
 There is no free water. The barista’s looking at you like you have just landed from Mars.
 
 [[Do you make espresso?|espresso]]</tw-passagedata><tw-passagedata pid="47" name="espresso" tags="" position="2150,475" size="100,100">&lt;==&gt;
@@ -544,11 +540,30 @@ You remember that the last time you hook up you had just quit with weed.
 
 This link probably isn&#39;t sitting too well. 
 
-[[I wish I did|nosh]]]</tw-passagedata><tw-passagedata pid="73" name="share" tags="" position="2350,2475" size="100,100">&lt;==&gt;
+[[I wish I did|nosh]]]</tw-passagedata><tw-passagedata pid="73" name="share" tags="" position="2000,2550" size="100,100">&lt;==&gt;
 The guy rolls the joint like he is working. 
-You share a small talk and nothing more. You avoid talking about the past week and stick the topic to the quality of the bud.
+You all share a small talk and nothing more. You avoid talking about the past week and stick the topic to the quality of the bud.
+The conversation is going nowhere until.
 
-</tw-passagedata><tw-passagedata pid="74" name="nosh" tags="" position="2000,2300" size="100,100">&lt;==&gt;
+//&#39;This is Riccardo by the way.&#39;//
+
+Sara takes Riccardo by the hand and pulls him closer to the center of your triangle of bodies.
+
+//&#39;He introduced me to this whole China vision of the world. He knows a lot.&#39;//
+
+The situationship does not reply. 
+He’s wearing a black hoodie and a pair of Dickies with Campers. He looks cute.
+
+//&#39;He&#39;s not much of a talker.&#39;//
+
+Awkward silence. 
+The joint burns out after three hits. 
+Sara puts it out with her shoe. She mumbles.
+
+//&#39;We move to my grandma’s place for the night. Come!&#39;//
+
+[[Why not|casa]]
+[[I will be late to the club|club]]</tw-passagedata><tw-passagedata pid="74" name="nosh" tags="" position="2000,2300" size="100,100">&lt;==&gt;
 She didn&#39;t like that response at all. The guy made her wait until this hour to hit too. 
 Today is definitely not her day too.
 
@@ -565,7 +580,60 @@ It takes them a second to move to the next car.
 
 //&#39;Where are we going?&#39;//
 
-[[Club|club]]]</tw-passagedata></tw-storydata>
+[[Club|club]]]</tw-passagedata><tw-passagedata pid="76" name="casa" tags="" position="2700,2425" size="100,100">&lt;==&gt;
+You get in the car with the couple. 
+Riccardo connects his phone to the AUX and puts on some techno.
+The ride lasts about ten minutes. You pass through the city center, a few roads, and end up at a house in a courtyard. There’s an old well in the middle of the yard and two parked cars.
+Sara opens the door and leads the way.
+
+//&#39;My parents never use it. Sorry for the mess.&#39;//
+
+The living room is really big. There are a lot of paintings hanging up. Some abstract, others still life. There&#39;s a giant red sofa. 
+A kitchen with a gas stove and a few chairs. A terrace with some dead plants.
+
+//&#39;We forgot to pick some beers.&#39;//
+
+[[Sit down|casac]]
+(if: $sigarette)[[Share the last cig|casasig]]</tw-passagedata><tw-passagedata pid="77" name="casasig" tags="" position="2600,2550" size="100,100">&lt;==&gt;
+You sit on the terrace, smoking.
+It feels like you’re all in London, if London were dropped into the new Mad Max movie. These are the suburbs.
+
+//&#39;My grandma grew up here with her family. They were four siblings. Three died in the war. The oldest one was killed by a bomb. My grandma told everyone it landed directly on his head. Do you believe it?&#39;//
+
+They laugh. It sounds absurd.
+
+//&#39;Anyway, she passed a few years ago. God bless her.&#39;//
+
+Riccardo looks more at me than at Sara.
+
+//&#39;Has this ever happened to you? The day before she died, she called. Told me to come over for lunch. I really didn’t feel like it. What’s weird is... she usually insisted. But that day, she didn’t say anything. Actually. I don’t even remember her replying.&#39;//
+
+Riccardo’s voice doesn’t carry any accent.
+
+//&#39;Maybe she knew she was going to, you know, die.&#39;//
+
+Sara gets up and walks to the kitchen to pour herself a glass of water. We can see her through the glass.
+
+[[Change topic|casasce]]</tw-passagedata><tw-passagedata pid="78" name="casac" tags="" position="2800,2550" size="100,100">&lt;==&gt;
+You sit on the terrace.
+It feels like you’re all in London, if London were dropped into the new Mad Max movie. These are the suburbs.
+
+//&#39;My grandma grew up here with her family. They were four siblings. Three died in the war. The oldest one was killed by a bomb. My grandma told everyone it landed directly on his head. Do you believe it?&#39;//
+
+They laugh. It sounds absurd.
+
+//&#39;Anyway, she passed a few years ago. God bless her.&#39;//
+
+Riccardo looks more at me than at Sara.
+
+//&#39;Has this ever happened to you? The day before she died, she called. Told me to come over for lunch. I really didn’t feel like it. What’s weird is... she usually insisted. But that day, she didn’t say anything. Actually. I don’t even remember her replying.&#39;//
+
+Riccardo’s voice doesn’t carry any accent.
+
+//&#39;She understood, I think.&#39;//
+
+[[Change topic|casasce]]</tw-passagedata><tw-passagedata pid="79" name="casasce" tags="" position="2700,2700" size="100,100">&lt;==&gt;
+(if: $k is false)[[[I have some k|casak]]][[What about the chinese philosophy?|casach]]</tw-passagedata><tw-passagedata pid="80" name="casak" tags="" position="2850,2825" size="100,100"></tw-passagedata><tw-passagedata pid="81" name="casach" tags="" position="2575,2825" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
