@@ -20,7 +20,7 @@ tw-passage {
 tw-icon[title="Undo"], tw-icon[title="Redo"] {
     display: none;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="start" tags="" position="175,650" size="200,100"> &lt;==&gt;
- ###Ignorance is bliss
+ ###Ignorance is Bliss
 It&#39;s (current-time:).
 You&#39;ve woken up in a stranger bed, fully clothed, with no memory of how you got there. 
 You have a throbbing headache. 
@@ -28,15 +28,15 @@ There is an iPhone ringing somewhere.
 
 [[Find the phone|cerca]]
 [[Let it ring|ignora2]]
-(set: $soldi to false)
+(set: $soldi to true)
 (set: $tel to true)
 (set: $k to false)
-(set: $kk to false)
-(set: $c to false)
+(set: $lose to false)
+(set: $coco to false)
 (set: $friends to false)
 (set: $lore to false)
 (set: $sigarette to false)</tw-passagedata><tw-passagedata pid="2" name="cerca" tags="" position="225,825" size="100,100"> &lt;==&gt;
-The iPhone was hidden under the sheets. 
+The iPhone was hidden under the sheets. It&#39;s yours.
 Screen’s cracked but seems to work. You can see some bad scratches on the back and it&#39;s on 8% of battery. 
 The number calling’s saved as Lore (Work).
 
@@ -129,10 +129,8 @@ He’s sitting on a bench. Next to him, a girl pretends to not notice you.
 He nods.
 
 [[Approach them|incontro]]
-[[Change direction|parco3]]
-
-(set: $soldi to true)</tw-passagedata><tw-passagedata pid="16" name="conv1.2" tags="" position="150,1225" size="100,100"> &lt;==&gt;
-The iPhone was hidden under the sheets. 
+[[Change direction|parco3]]</tw-passagedata><tw-passagedata pid="16" name="conv1.2" tags="" position="150,1225" size="100,100"> &lt;==&gt;
+The iPhone was hidden under the sheets. It&#39;s yours.
 Screen’s cracked but seems to work. You can see some bad scratches on the back and it&#39;s on 8% of battery.
 The number calling’s saved as Lore (Work). 
 
@@ -146,7 +144,7 @@ It&#39;s a voicemail.
 
 &#39;&#39;The number you’re calling can’t be reached. Please, try again later.&#39;&#39;
 
-Weird. 
+Strange.
 
 [[Keep the iPhone and leave the flat|esci]]</tw-passagedata><tw-passagedata pid="18" name="incontro" tags="" position="1225,775" size="100,100"> &lt;==&gt;
 The figure shifts over, making space to his left. On his right, the girl’s glued to her phone.
@@ -177,7 +175,7 @@ The plug opens his fist. There&#39;s a piece of grid paper folded into a strip.
 //&#39;Still cooked from last night?&#39;//
 
 [[Check your pockets|tasche]]
-[[Go home|casa2]]</tw-passagedata><tw-passagedata pid="21" name="pok" tags="" position="1400,675" size="100,100"> &lt;==&gt;
+[[Leave|casa2]]</tw-passagedata><tw-passagedata pid="21" name="pok" tags="" position="1400,675" size="100,100"> &lt;==&gt;
 //&#39;Bet. You lowkey need a face-lift.&#39;//
 
 The girl is silent.
@@ -212,15 +210,15 @@ He takes his sweetie by the hand and leave.
 
 [[Continue|offparco]]
 (set: $soldi to false)
-</tw-passagedata><tw-passagedata pid="26" name="telefono" tags="" position="1575,225" size="100,100"> &lt;==&gt;
+(set: $k to true)</tw-passagedata><tw-passagedata pid="26" name="telefono" tags="" position="1575,225" size="100,100"> &lt;==&gt;
 You think you hear the girl calling you a lame ass something.
 Lore takes you by the shoulder.
 
-//&#39;This what I get for showing up? Hand the iPhone and we set this.&#39;//
+//&#39;This what I get for showing up? Hand the iPhone and leave us alone.&#39;//
 
 [[Do as he says|telefono2]]
-[[No I won&#39;t|telefono1]]</tw-passagedata><tw-passagedata pid="27" name="telefono1" tags="" position="1575,50" size="100,100"> &lt;==&gt;
-//&#39;Oh, you won&#39;t? That&#39;s good. You won&#39;t receive nose candy then. For a whileeeee.&#39;//
+[[No, I won&#39;t|telefono1]]</tw-passagedata><tw-passagedata pid="27" name="telefono1" tags="" position="2200,50" size="100,100"> &lt;==&gt;
+//&#39;Oh, you won&#39;t? That&#39;s good. You won&#39;t receive nose candy then. For a while!&#39;//
 
 He would’ve reacted way worse in any other occasion.
 
@@ -228,6 +226,7 @@ He would’ve reacted way worse in any other occasion.
 
 The couple walk off. You feel stupid. 
 
+[[Continue|offparco]]
 [[Go home|casa3]]</tw-passagedata><tw-passagedata pid="28" name="telefono2" tags="" position="1750,350" size="100,100"> &lt;==&gt;
 //&#39;Unbelievable. Do you take fit pics with this? This scrap looks good only to do lines.&#39;//
 
@@ -243,6 +242,7 @@ They leave.
 
 [[Continue|offparco]]
 (set: $tel to false)
+(set: $k to true)
 </tw-passagedata><tw-passagedata pid="29" name="casa3" tags="" position="875,325" size="100,100"> &lt;==&gt;
 You left the park and got home. It&#39;s one of those days.
 You still have a broken iPhone and some bills.
@@ -259,13 +259,13 @@ He is waiting for your next move.
 [[Pay|compra]]
 [[Where is my wallet?|telefono]]
 </tw-passagedata><tw-passagedata pid="32" name="offparco" tags="" position="1725,575" size="100,100"> &lt;==&gt;
-[[Enjoy what you have|botta]]
-[[Get yourself a coffe|bar]]</tw-passagedata><tw-passagedata pid="33" name="botta" tags="" position="1575,675" size="100,100">&lt;==&gt;
+[[Get yourself a coffe|bar]]
+(if: $k is true)[ [[Enjoy what you have|botta]] ]</tw-passagedata><tw-passagedata pid="33" name="botta" tags="" position="1575,675" size="100,100">&lt;==&gt;
+You are all alone. 
 You crush the rock at the bus stop. 
-You are all alone but found a pack of cigarettes. 
 
 [[Do your job|botta2]]
-(set: $sigarette to true)</tw-passagedata><tw-passagedata pid="34" name="botta2" tags="" position="1575,825" size="100,100">&lt;==&gt;
+</tw-passagedata><tw-passagedata pid="34" name="botta2" tags="" position="1575,825" size="100,100">&lt;==&gt;
 It feels good.
 
 [[Another one|botta3]]</tw-passagedata><tw-passagedata pid="35" name="botta3" tags="" position="1575,975" size="100,100">&lt;==&gt;
@@ -274,12 +274,12 @@ It&#39;s almost over.
 
 [[Finish what you started|khole]]
 [[Stop]]
-(set: $k to true)</tw-passagedata><tw-passagedata pid="36" name="khole" tags="" position="1575,1100" size="100,100">&lt;==&gt;
+(set: $k to false)</tw-passagedata><tw-passagedata pid="36" name="khole" tags="" position="1575,1100" size="100,100">&lt;==&gt;
 It goes the last line. 
 You are sure of floating even if you feel nauseous.
 Can&#39;t move your legs or arms. You simply stand still.
 
-[[Close your eyes|Try to puke]]</tw-passagedata><tw-passagedata pid="37" name="Stop" tags="" position="1825,975" size="100,100">&lt;==&gt;
+[[Open your eyes|Try to puke]]</tw-passagedata><tw-passagedata pid="37" name="Stop" tags="" position="1825,975" size="100,100">&lt;==&gt;
 You look up and a tall, skinny woman is staring, right in your face.
 
 //&#39;Spare a coin?&#39;//
@@ -287,14 +287,16 @@ You look up and a tall, skinny woman is staring, right in your face.
 You are not ready for an interaction yet. 
 
 [[Yes... I mean, no...|continue]]
-(if: $tel is true)[[[Give her the iPhone|continuetel]]](if: $soldi is true)[[[Give her the money|continuesoldi]]]
+(if: $tel is true)[ [[Give her the iPhone|continuetel]] ](if: $soldi is true)[ [[Give her the money|continuesoldi]] ]
 </tw-passagedata><tw-passagedata pid="38" name="Vomit" tags="" position="1575,1325" size="100,100"> &lt;==&gt;
 You bend over and puke some sort of pale liquid. No sound, no fragrance.
-You are back from the trip.
+You are back from the trip. 
+There is a pack of cigs on a bench.
 
 [[I want to check something|check]]
 [[Time for the club|club]]
 [[You had enough|casa4]]
+(set: $sigarette to true)
 </tw-passagedata><tw-passagedata pid="39" name="club" tags="" position="1250,2125" size="100,100">[[Work in progress|start]]</tw-passagedata><tw-passagedata pid="40" name="casa4" tags="" position="975,1650" size="100,100"> &lt;==&gt;
 You made it back without saying a single word. 
 You don&#39;t remember a face. Can’t even recall the road.
@@ -333,16 +335,15 @@ Your stomach twists a little. Maybe you’re hungry. Maybe not. Hard to tell.
 
 [[Continue|bar2]]
 (set: $soldi to false)</tw-passagedata><tw-passagedata pid="46" name="water" tags="" position="2000,600" size="100,100">&lt;==&gt;
-There is no free water. The barista’s looking at you like you have just landed from Mars.
-You take a free pack of Winston from a table.
+There is no free water. 
+The barista’s looking at you like you have just landed from Mars.
 
-[[Do you make espresso?|espresso]]
-(set: $sigarette to true)</tw-passagedata><tw-passagedata pid="47" name="espresso" tags="" position="2150,475" size="100,100">&lt;==&gt;
+[[Do you make espresso?|espresso]]</tw-passagedata><tw-passagedata pid="47" name="espresso" tags="" position="2150,475" size="100,100">&lt;==&gt;
 //&#39;This is a coffe. We must do espresso.&#39;//
 
 They look at you wrong. This is terrible.
 
-(if: $soldi is false)[[[I&#39;m short on cash|continue3]]](else:)[[Order]]
+(if: $soldi is false)[ [[I&#39;m short on cash|continue3]] ](else:)[ [[Order]] ]
 </tw-passagedata><tw-passagedata pid="48" name="bar2" tags="" position="2350,975" size="100,100">&lt;==&gt;
 You see some people in a car, honking at you. 
 They are friends.
@@ -350,19 +351,18 @@ They are friends.
 [[Get in|macchina]]
 [[I have other things to do|ignore]]</tw-passagedata><tw-passagedata pid="49" name="Order" tags="" position="2150,600" size="100,100">&lt;==&gt;
 The coffe tastes like dishwater.
-You take a pack of Winston from a table.
 
 [[Leave|continue3]]
-(set: $kk to true)</tw-passagedata><tw-passagedata pid="50" name="continue3" tags="" position="2325,775" size="100,100">&lt;==&gt;
-The streets are lifeless. If it weren&#39;t for the cars and scooters rushing, it could easily be a hallucination.
+(set: $lose to true)</tw-passagedata><tw-passagedata pid="50" name="continue3" tags="" position="2325,775" size="100,100">&lt;==&gt;
+The streets are lifeless. If it weren&#39;t for the traffic lights working, it could easily be a hallucination.
 
 [[Move on|bar2]]
-(if: $kk is true)[[[Hit some K|bottafake]]](else:)[[[Hit some K|botta]]]
+(if: $lose is true and $k is true)[[[Hit some K|bottafake]]](else-if: $lose is false and $k is true)[[[Hit some K|botta]]]
 </tw-passagedata><tw-passagedata pid="51" name="bottafake" tags="" position="2525,775" size="100,100">&lt;==&gt;
 You can&#39;t find the blow. You lost it in the bar. How&#39;s that even possible?
 
 [[What?!|bar2]]
-(set: $k to true)</tw-passagedata><tw-passagedata pid="52" name="macchina" tags="" position="2350,1150" size="100,100">&lt;==&gt;
+(set: $k to false)</tw-passagedata><tw-passagedata pid="52" name="macchina" tags="" position="2350,1150" size="100,100">&lt;==&gt;
 The car smells like ashtray. 
 They&#39;re all dressed in black, except the driver who has a pink hat.
 The radio is bumping nostalgic trap music. 
@@ -370,14 +370,14 @@ Something feels wrong. It surely will gets worse.
 
 //&#39;We are trying to get dope for tonight. You in?&#39;//
 
-(if: $k is false)[[[Have some|bottaauto]]](else-if: $soldi is true)[[[Let&#39;s go|compra2]]
-[[Sorry, I got things to take care|continueclub]]](else-if: $soldi is false)[[[I ain&#39;t got cash|continueclub]]]</tw-passagedata><tw-passagedata pid="53" name="bottaauto" tags="" position="2475,1400" size="100,100">&lt;==&gt;
+(if: $k is true)[[[Have some|bottaauto]]](else-if: $soldi is true)[ [[Let&#39;s go|compra2]]
+[[Sorry, I got things to take care|continueclub]] ](else-if: $soldi is false)[ [[I can&#39;t help|continueclub]] ]</tw-passagedata><tw-passagedata pid="53" name="bottaauto" tags="" position="2475,1425" size="100,100">&lt;==&gt;
 You are in the backseat. 
 One hit each, passing the credit card back and forth.
 Lore was right. This is the best.
 
 [[The club tonight is gonna turn wild|club]]
-(set: $c to true)
+(set: $coco to false)
 (set: $friends to true)
 </tw-passagedata><tw-passagedata pid="54" name="continueclub" tags="" position="2250,1400" size="100,100">&lt;==&gt;
 They drop you off.
@@ -456,7 +456,7 @@ You are back in the car.
 
 [[Let&#39;s save it for the night|club]]
 [[Do one for the plot|bottaauto]]
-(set: $c to false)</tw-passagedata><tw-passagedata pid="64" name="Try to puke" tags="" position="1400,1175" size="100,100">&lt;==&gt;
+(set: $coco to true)</tw-passagedata><tw-passagedata pid="64" name="Try to puke" tags="" position="1400,1175" size="100,100">&lt;==&gt;
 You try to open your eyes, but they’re too heavy, like always. Each time you tell yourself you’ll manage end up in failure.
 Beams of light slowly drift closer, then pull away. They look so real that you could probably touch them if you weren’t completely paralyzed.
 You think about your mom. Your father. You remember your first crush. Then the first time you had sex. It feels like you’re almost there doing it over again.
@@ -594,7 +594,8 @@ Riccardo’s voice doesn’t carry any accent.
 
 //&#39;Maybe she knew she was going to, you know, die.&#39;//
 
-[[Continue|casasce]]</tw-passagedata><tw-passagedata pid="76" name="casac" tags="" position="2400,2600" size="100,100">&lt;==&gt;
+[[Continue|casasce]]
+(set: $sigarette to false)</tw-passagedata><tw-passagedata pid="76" name="casac" tags="" position="2400,2600" size="100,100">&lt;==&gt;
 You are on the terrace.
 It feels like London, if London were a city in Mad Max. These are the suburbs.
 
@@ -614,7 +615,7 @@ Riccardo’s voice doesn’t carry any accent.
 
 [[Continue|casasce]]</tw-passagedata><tw-passagedata pid="77" name="casasce" tags="" position="2300,2750" size="100,100">&lt;==&gt;
 [[I&#39;m sorry for your loss|casach]]
-(if: $k is false)[[[I have some k|casak]]]</tw-passagedata><tw-passagedata pid="78" name="casach" tags="" position="2175,2875" size="100,100">&lt;==&gt;
+(if: $k is true)[ [[I have some k|casak]] ]</tw-passagedata><tw-passagedata pid="78" name="casach" tags="" position="2175,2875" size="100,100">&lt;==&gt;
 Riccardo&#39;s voice is very low. 
 
 //&#39;You know, when my grandma died I didn’t really feel much. I may be a dick for saying this but I didn’t shed a single tear.&#39;//
@@ -639,7 +640,7 @@ You stretch out on the plastic chair. She’s right.
 
 [[Real|good]]
 [[I feel cold|good!!]]
-(set: $k to true)</tw-passagedata><tw-passagedata pid="80" name="good" tags="" position="2425,3025" size="100,100">&lt;==&gt;
+(set: $k to false)</tw-passagedata><tw-passagedata pid="80" name="good" tags="" position="2425,3025" size="100,100">&lt;==&gt;
 Riccardo grabs Sara’s cheek and kisses her. She’s into it. He focus on her neck a bit and they both start laughing.
 You want to hide.
 Riccardo&#39;s voice is really low.
@@ -667,7 +668,7 @@ There is a new charcoal toothpaste in a Nutella cup.
 </tw-passagedata><tw-passagedata pid="84" name="Wow" tags="" position="2150,3150" size="100,100">&lt;==&gt;
 //&#39;This says a lot about society.&#39;//
 
-The tension is long gone.
+The tension is disappearing.
 
 //&#39;And explains your substance abuse.&#39;//
 
