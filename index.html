@@ -334,8 +334,10 @@ Your stomach twists a little. Maybe you’re hungry. Maybe not. Hard to tell.
 [[Continue|bar2]]
 (set: $soldi to false)</tw-passagedata><tw-passagedata pid="46" name="water" tags="" position="2000,600" size="100,100">&lt;==&gt;
 There is no free water. The barista’s looking at you like you have just landed from Mars.
+You take a free pack of Winston from a table.
 
-[[Do you make espresso?|espresso]]</tw-passagedata><tw-passagedata pid="47" name="espresso" tags="" position="2150,475" size="100,100">&lt;==&gt;
+[[Do you make espresso?|espresso]]
+(set: $sigarette to true)</tw-passagedata><tw-passagedata pid="47" name="espresso" tags="" position="2150,475" size="100,100">&lt;==&gt;
 //&#39;This is a coffe. We must do espresso.&#39;//
 
 They look at you wrong. This is terrible.
@@ -348,6 +350,7 @@ They are friends.
 [[Get in|macchina]]
 [[I have other things to do|ignore]]</tw-passagedata><tw-passagedata pid="49" name="Order" tags="" position="2150,600" size="100,100">&lt;==&gt;
 The coffe tastes like dishwater.
+You take a pack of Winston from a table.
 
 [[Leave|continue3]]
 (set: $kk to true)</tw-passagedata><tw-passagedata pid="50" name="continue3" tags="" position="2325,775" size="100,100">&lt;==&gt;
@@ -424,8 +427,7 @@ You went to the parking lot. It&#39;s the usual meetup spot before the night.
 There are about thirty people.
 
 [[Browse the crowd|Continue]]
-(if: $sigarette is false)[ [[Look down]] ]
-(if: $sigarette is true)[ [[Smoke]] ]
+(if: $sigarette is false)[ [[Look down]] ](if: $sigarette is true)[ [[Smoke]] ]
 </tw-passagedata><tw-passagedata pid="61" name="projects" tags="" position="2825,1150" size="100,100">&lt;==&gt;
 These buildings all looks the same. 
 You walk down a narrow hallway. You notices faces glaring at you from behind gated windows, and someone else trailing you from another corridor, keeping your pace.
@@ -490,7 +492,7 @@ You take a first step when a vehicle stop right by you.
 
 Sara is in this black Fiat Punto with a friend. They&#39;re rolling a joint.
 
-[[How is it going?|parcheggio1]]</tw-passagedata><tw-passagedata pid="68" name="Continue" tags="" position="2475,2000" size="100,100">&lt;==&gt;
+[[Hey|parcheggio1]]</tw-passagedata><tw-passagedata pid="68" name="Continue" tags="" position="2475,2000" size="100,100">&lt;==&gt;
 Some couple are inside their car making out, others are just having fun. 
 You take a first step when a vehicle stop right by you.
 
@@ -498,7 +500,7 @@ You take a first step when a vehicle stop right by you.
 
 Sara is in this black Fiat with a friend. They&#39;re rolling a joint.
 
-[[How is it going?|parcheggio2]]</tw-passagedata><tw-passagedata pid="69" name="parcheggio1" tags="" position="2200,2150" size="100,100">&lt;==&gt;
+[[Heyyy|parcheggio2]]</tw-passagedata><tw-passagedata pid="69" name="parcheggio1" tags="" position="2200,2150" size="100,100">&lt;==&gt;
 You keep smoking. Your lungs are aching but it keeps your hands busy.
 
 //&#39;Take a look.&#39;//
@@ -521,7 +523,7 @@ It is an image of a yin-yang emoji doing the finger.
 [[Source?|offer]]</tw-passagedata><tw-passagedata pid="71" name="offer" tags="" position="2350,2275" size="100,100">&lt;==&gt;
 (if: $sigarette is true)[//&#39;This new meme page.&#39;//
 
-Sara is a bit lit but nothing out of the ordinary. Her new situation is playing it cool, probably earned some points with that Chrome Hearts shirt. It looks rep though.
+Sara is a bit lit but nothing out of the ordinary. Her new situation is playing it cool, probably earned some points with that Chrome Hearts shirt. It looks rep.
 
 //&#39;Sorry but we need a smoke to close this blunt or it will take forever...&#39;//
 
@@ -532,7 +534,7 @@ She’s always been the kind of person who put her own above anything.
 [[Share a smoke|share]]
 [[That was the last one|nosh]]](else:)[//&#39;This new meme page.&#39;//
 
-Sara is a bit lit but nothing out of the ordinary. Her new situation is playing it cool, probably earned some points with that Chrome Hearts shirt. It looks rep though. 
+Sara is a bit lit but nothing out of the ordinary. Her new situation is playing it cool, probably earned some points with that Chrome Hearts shirt. It looks rep. 
 
 //&#39;Without a smoke it will take forever to roll this blunt.&#39;//
 
@@ -542,19 +544,18 @@ She’s always been the kind of person who put her own above anything.
 
 [[I wish I did|nosh]]]</tw-passagedata><tw-passagedata pid="72" name="share" tags="" position="1975,2600" size="100,100">&lt;==&gt;
 The guy takes the Winston and do the joint.
-The conversation is going nowhere.
 
-//&#39;This is Riccardo by the way.&#39;//
+//&#39;This is Riccardo.&#39;//
 
 Sara takes the guy by the hand and pulls him closer to the center of your triangle of bodies.
 
 //&#39;Hinge&#39;s affair.&#39;//
 
-He doesn&#39;t reply. He looks lost.
+He doesn&#39;t reply.
 
 //&#39;He&#39;s not much of a talker.&#39;//
 
-The joint burns out after three hits. Sara puts it out with her shoe and mumbles.
+The joint burns out after three hits. Sara puts it out with her shoe and quite yell.
 
 //&#39;We move to my grandma’s place for the night. Do you wanna come?&#39;//
 
@@ -565,14 +566,14 @@ They move to the next group like you disappeared.
 
 //&#39;I will text you in these days, ok?&#39;//
 
-[[Take the metro|taxi]]</tw-passagedata><tw-passagedata pid="74" name="taxi" tags="" position="1925,1875" size="100,100">&lt;==&gt;
+[[Take the train|taxi]]</tw-passagedata><tw-passagedata pid="74" name="taxi" tags="" position="1925,1875" size="100,100">&lt;==&gt;
 (if: $sigarette is true)[You arrive earlier than expected. Just in time for you to be left with only two cigarettes for the night.
 
-[[Club|club]]](else:)[You move fast and jump the metro. 
+[[Club|club]]](else:)[You move fast and take the first train.
 
 [[Club|club]]]</tw-passagedata><tw-passagedata pid="75" name="casa" tags="" position="2700,2425" size="100,100">&lt;==&gt;
 You get in the car with the couple. Riccardo connects his phone to the AUX and puts on some techno.
-The ride lasts about ten minutes. You pass through the city center, a few roads, and end up at a old house in a courtyard. There’s a well in the middle of the yard and two parked scooters.
+The ride lasts about ten minutes. You pass through the city center, a few roads and end up at a old house in a courtyard. There’s a well and two parked scooters.
 Sara opens the door.
 
 //&#39;My parents never use it. Sorry for the mess.&#39;//
