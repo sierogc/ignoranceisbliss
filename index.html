@@ -258,7 +258,7 @@ He is waiting for your next move.
 [[Pay|compra]]
 [[Where is my wallet?|telefono]]
 </tw-passagedata><tw-passagedata pid="32" name="offparco" tags="" position="1725,575" size="100,100"> &lt;==&gt;
-[[Get yourself a coffe|bar]]
+[[You need a coffe|bar]]
 (if: $k is true)[ [[Enjoy what you have|botta]] ]</tw-passagedata><tw-passagedata pid="33" name="botta" tags="" position="1575,675" size="100,100">&lt;==&gt;
 You are all alone. 
 You crush the rock at the bus stop. 
@@ -292,9 +292,14 @@ You bend over and puke some sort of pale liquid. No sound, no fragrance.
 You are back from the trip. There is a pack of cigs on the ground.
 
 [[I want to check something|check]]
-[[Time for the club|club]]
+[[You need some music|club]]
 [[You had enough|casa4]]
-(set: $sigarette to true)</tw-passagedata><tw-passagedata pid="39" name="club" tags="" position="1575,1650" size="100,100">[[Work in progress|start]]</tw-passagedata><tw-passagedata pid="40" name="casa4" tags="" position="975,1650" size="100,100"> &lt;==&gt;
+(set: $sigarette to true)</tw-passagedata><tw-passagedata pid="39" name="club" tags="" position="1575,1650" size="100,100">You got to the club late and things are already in motion. Place is packed.
+At the entrance, the first wave of clubbers are sitting around, drinking, chatting, trying to hit on whoever just walked in.
+The resident DJ is playing international hits. Vibe’s alright.
+
+[[Enter|enter]]
+(if: $sigarette is true)[ [[Have a smoke]] ]</tw-passagedata><tw-passagedata pid="40" name="casa4" tags="" position="975,1650" size="100,100"> &lt;==&gt;
 You made it back without saying a single word. 
 You don&#39;t remember a face. Can’t even recall the road.
 There is your father at the door.
@@ -307,7 +312,7 @@ You take the meds from the closet and play a podcast. You will not move from you
 [[Restart|start]]</tw-passagedata><tw-passagedata pid="42" name="end4" tags="" position="825,1975" size="100,100"> &lt;==&gt;
 //&#39;What is this rave you keep talking about in your chats?&#39;//
 
-You left the MacBook unlocked, again. He read your chat.
+You left the MacBook unlocked, again.
 
 [[Leave me alone!|end4.2]]</tw-passagedata><tw-passagedata pid="43" name="continue" tags="" position="2025,825" size="100,100">&lt;==&gt;
 You catch the junkie mutter something but your brain is too messed up to make up anything.
@@ -368,15 +373,15 @@ Something feels wrong. It surely will gets worse.
 
 (if: $k is true)[[[Have some of mine|bottaauto]]
 [[I got things to take care of|continueclub]]](else-if: $soldi is true)[ [[Let&#39;s go|compra2]]
-[[I got things to take care of|continueclub]] ](else-if: $soldi is false)[ [[I can&#39;t help|continueclub]] ]</tw-passagedata><tw-passagedata pid="53" name="bottaauto" tags="" position="2475,1425" size="100,100">&lt;==&gt;
+[[I got things to take care of|continueclub]] ](else-if: $soldi is false)[ [[I can&#39;t help|continueclub]] ]</tw-passagedata><tw-passagedata pid="53" name="bottaauto" tags="" position="2450,1425" size="100,100">&lt;==&gt;
 You are in the backseat. 
 One hit each, passing the credit card back and forth.
-Lore was right. This is the best.
+Nobody is better than you. 
 
 [[The club tonight is gonna turn wild|club]]
 (set: $coco to false)
 (set: $friends to true)
-</tw-passagedata><tw-passagedata pid="54" name="continueclub" tags="" position="2250,1400" size="100,100">&lt;==&gt;
+</tw-passagedata><tw-passagedata pid="54" name="continueclub" tags="" position="2275,1350" size="100,100">&lt;==&gt;
 They drop you off.
 
 [[I want to check something|check]]
@@ -410,7 +415,7 @@ The call ends.
 No doubt that they&#39;ll get back sooner or later.
 
 [[I want to check something|check]]
-[[You move towards the club|club]]
+[[You move to the club|club]]
 
 
 
@@ -419,8 +424,8 @@ You enter a bar.
 They all stare at you. It&#39;s the way you look or the way you act? Either way doesn&#39;t matter.
 
 [[Do you make espresso?|espresso]]
-[[I need water|water]]</tw-passagedata><tw-passagedata pid="60" name="check" tags="" position="2050,1750" size="100,100">&lt;==&gt;
-You went to the parking lot. It&#39;s the usual meetup spot before the night.
+[[Where is the water?|water]]</tw-passagedata><tw-passagedata pid="60" name="check" tags="" position="2050,1750" size="100,100">&lt;==&gt;
+You went to the parking lot. It&#39;s the usual meetup spot before anything.
 There are about thirty people.
 
 [[Browse the crowd|Continue]]
@@ -441,7 +446,7 @@ The room is dim. The smell of food and something heavier hits you as soon as you
 The pusher is playing FIFA. Next to him, an egirl is slowly smoking a joint while lying on a sofa. A pitbull, sitting beside her, guards the door. 
 On the table there are tons of plastic bags and various weed buds in amounts you couldn&#39;t even begin to count. 
 
-[[How much for a gram of coke?|Pay2]]</tw-passagedata><tw-passagedata pid="63" name="Pay" tags="" position="2650,1550" size="100,100">&lt;==&gt;
+[[How much for a gram of coke?|Pay2]]</tw-passagedata><tw-passagedata pid="63" name="Pay" tags="" position="2650,1575" size="100,100">&lt;==&gt;
 The group is in the exact same position you left them.
 The driver is waiting for change, then realises it&#39;s useless. 
 You flash the stash.
@@ -567,7 +572,7 @@ Sara opens the door.
 
 //&#39;My parents never use it. Sorry for the mess.&#39;//
 
-The living room is really big. There are a lot of paintings hanging up. Some abstract, others still life. There&#39;s a giant red sofa. 
+The living room is really big. There are a lot of paintings hanging up. Some abstract, others still life. There&#39;s a giant red couch. 
 The furniture is made of a gas stove and few chairs. A terrace with some dead plants.
 
 //&#39;We forgot to pick beers.&#39;//
@@ -617,7 +622,7 @@ Riccardo&#39;s voice is very low.
 
 //&#39;You know, when my grandma died I didn’t really feel much. I may be a dick for saying this but I didn’t shed a single tear.&#39;//
 
-In the distance you can hear horns and scooters speeding by. 
+In the distance you can hear car horns. 
 
  //&#39;I have a story too. The moment they started throwing dirt on my grandma grave my mom just snapped. She screamed and began to tear grass from the place like she was some sort of wild animal. That was hard to see. Everyone just froze. I saw my mother go back to be a daughter for ten minutes.&#39;//
 
@@ -635,7 +640,7 @@ You stretch out on the plastic chair. She’s right.
 
 //&#39;Thanks horses.&#39;//
 
-[[Real|good]]
+[[It is goodl|good]]
 [[I feel cold|good!!]]
 (set: $k to false)</tw-passagedata><tw-passagedata pid="80" name="good" tags="" position="2425,3025" size="100,100">&lt;==&gt;
 Riccardo grabs Sara’s cheek and kisses her. She’s into it. He focus on her neck a bit and they both start laughing.
@@ -646,9 +651,9 @@ Riccardo&#39;s voice is really low.
 
 [[Yes|y]]
 [[No|y]]</tw-passagedata><tw-passagedata pid="81" name="good!!" tags="" position="2675,3150" size="100,100">&lt;==&gt;
-//&#39;It hit hard?&#39;//
+//&#39;It hit?&#39;//
 
-Riccardo is cleaning the screen of his phone while Sara is seeking every last bit of powder. 
+Riccardo is cleaning the screen of his phone while Sara is seeking every last grain of magic.
 
 [[Where is the bathroom?|bath]]</tw-passagedata><tw-passagedata pid="82" name="y" tags="" position="2450,3175" size="100,100">&lt;==&gt;
 //&#39;Stop talking nonsense.&#39;//
@@ -663,12 +668,12 @@ There is a new charcoal toothpaste in a Nutella cup.
 
 [[Check yourself|check1]]
 [[Pocket the toothpaste|discuss1]]
-</tw-passagedata><tw-passagedata pid="84" name="Wow" tags="" position="2150,3150" size="100,100">&lt;==&gt;
+</tw-passagedata><tw-passagedata pid="84" name="Wow" tags="" position="2150,3125" size="100,100">&lt;==&gt;
 //&#39;This says a lot about society.&#39;//
 
 The tension is disappearing.
 
-//&#39;And explains your problems.&#39;//
+//&#39;And explains your substance abuse.&#39;//
 
 That was perfectly timed. 
 
@@ -695,7 +700,7 @@ The person in the mirror is only ugly as you are.
 [[You hate what you see|discuss]]
 </tw-passagedata><tw-passagedata pid="88" name="discuss" tags="" position="2050,3425" size="100,100">&lt;==&gt;
 As you&#39;re stepping out you hear a dog barking from the bedroom.
-This house somehow feels close to your memories. 
+This house somehow feels close to your memories. Or you are just high. 
 
 [[Take a look around|look]]
 [[Terrace|terrazza]]</tw-passagedata><tw-passagedata pid="89" name="discuss1" tags="" position="1850,3225" size="100,100">&lt;==&gt;
@@ -709,14 +714,14 @@ This house somehow feels close to your memories.
 Sara and Riccardo are on their phones watching reels. They act already like a couple.
 
 [[Can I sleep here?|sleep]]
-[[Can you bring me home?|home]]</tw-passagedata><tw-passagedata pid="92" name="sleep" tags="" position="1675,3575" size="100,100">&lt;==&gt;
+[[I don&#39;t feel so good|home]]</tw-passagedata><tw-passagedata pid="92" name="sleep" tags="" position="1675,3575" size="100,100">&lt;==&gt;
 //&#39;Sure.&#39;//
 
-Sara brings two pillows for the couch and rests a hand on your belly.
+Sara brings two pillows for the couch and gives a hug.
 
-//&#39;Goodnight.&#39;//
+//&#39;Knock if you need anything.&#39;//
 
-You hear them having sex for some time. They are in the same room where you heard the dog. Something feels missing.
+You hear them having sex for some time. They are in the same room where you heard the barking. Something feels missing.
 
 [[Where is the dog?|look]]
 [[Sleep|end5]]</tw-passagedata><tw-passagedata pid="93" name="home" tags="" position="1775,3700" size="100,100">&lt;==&gt;
@@ -727,14 +732,18 @@ Sara has put her Spotify&#39;s moody daily mix.
 
 //&#39;My grandma’s probably crying thinking about what became of her house.&#39;//
 
-No one’s home when you get back. Your bed is waiting.
-(if: $denti is true)[You test the stolen toothpaste. It tastes metallic.
+No one’s home when you get back. 
+Your bed is waiting. (if: $denti is true)[You test the stolen toothpaste. It tastes metallic.]
 
-[[Sleep|end5]] ](else:)[[[Sleep|end5]]]</tw-passagedata><tw-passagedata pid="94" name="end5" tags="" position="75,3575" size="100,100">&lt;==&gt;
+[[[Sleep|end5]]]</tw-passagedata><tw-passagedata pid="94" name="end5" tags="" position="75,3575" size="100,100">&lt;==&gt;
  ###Ignorance is Bliss
  ####A game by Guido Corbisiero. 
  
- [[Wake up|start]]</tw-passagedata></tw-storydata>
+ [[Wake up|start]]</tw-passagedata><tw-passagedata pid="95" name="Have a smoke" tags="" position="1600,1825" size="100,100">Lots of basic, but with cool people mixed in the middle. 
+Lorenzo is in a corner, talking with some other guys. That girl from earlier is there too.
+
+[[I need a drink|drink]]
+[[Reach Lore|lore2]]</tw-passagedata><tw-passagedata pid="96" name="enter" tags="" position="1350,1850" size="100,100"></tw-passagedata><tw-passagedata pid="97" name="drink" tags="" position="1525,2100" size="100,100"></tw-passagedata><tw-passagedata pid="98" name="lore2" tags="" position="1725,1950" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
