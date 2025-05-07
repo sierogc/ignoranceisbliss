@@ -35,7 +35,8 @@ There is an iPhone ringing somewhere.
 (set: $friends to false)
 (set: $lore to false)
 (set: $sigarette to false)
-(set: $denti to false)</tw-passagedata><tw-passagedata pid="2" name="cerca" tags="" position="225,825" size="100,100"> &lt;==&gt;
+(set: $denti to false)
+(set: $lore to false)</tw-passagedata><tw-passagedata pid="2" name="cerca" tags="" position="225,825" size="100,100"> &lt;==&gt;
 The iPhone was hidden under the sheets. It&#39;s yours.
 Screen’s cracked but seems to work. You can see some bad scratches on the back and it&#39;s on 8% of battery. 
 The number calling’s saved as Lore (Work).
@@ -292,8 +293,9 @@ You are back from the trip. There is a pack of cigs on the ground.
 [[I want to check something|check]]
 [[You need the club|club]]
 [[You had enough|casa4]]
-(set: $sigarette to true)</tw-passagedata><tw-passagedata pid="39" name="club" tags="" position="1575,1650" size="100,100">You got to the club late and things are already in motion. Place is packed.
-At the entrance, the first wave of clubbers are sitting around, drinking, chatting, trying to hit on whoever just walkin.
+(set: $sigarette to true)</tw-passagedata><tw-passagedata pid="39" name="club" tags="" position="1575,1650" size="100,100"> &lt;==&gt;
+You got to the club late and things are already in motion. Place is packed.
+At the entrance, the first wave of clubbers are sitting around, drinking, chatting, trying to hit on whoever. Lore is in a corner talking with some people.
 The resident DJ is playing international hits. The energy feels right.
 
 [[Enter|enter]]
@@ -709,7 +711,7 @@ This house somehow feels close to your memories.
 
 [[Check the couple|terrazza]]
 [[Take a look|look]]
-(set: $denti to true)</tw-passagedata><tw-passagedata pid="90" name="look" tags="" position="1100,3775" size="100,100">The dog is ba 
+(set: $denti to true)</tw-passagedata><tw-passagedata pid="90" name="look" tags="" position="1100,3775" size="100,100">Root finale in costruzione
 [[Restart|start]]</tw-passagedata><tw-passagedata pid="91" name="terrazza" tags="" position="1700,3400" size="100,100">&lt;==&gt;
 Sara and Riccardo are on their phones watching reels. They act already like a couple.
 
@@ -739,11 +741,49 @@ No one is awake when you get back.
  ###Ignorance is Bliss
  ####A game by Guido Corbisiero. 
  
- [[Wake up|start]]</tw-passagedata><tw-passagedata pid="95" name="Have a smoke" tags="" position="1600,1825" size="100,100">Lots of basic with cool mixed in. 
-Lore is in a corner talking with a group. He is with the one from earlier.
+ [[Wake up|start]]</tw-passagedata><tw-passagedata pid="95" name="Have a smoke" tags="" position="1600,1825" size="100,100"> &lt;==&gt;
+This cig feels like inhaling cotton. 
+People are coming in and out and you got lost. Lots of basic with some cool mixed in. 
+Lore smiles at you.
 
-[[I need a drink|drink]]
-[[Reach Lore|lore2]]</tw-passagedata><tw-passagedata pid="96" name="enter" tags="" position="1350,1850" size="100,100"></tw-passagedata><tw-passagedata pid="97" name="drink" tags="" position="1525,2100" size="100,100"></tw-passagedata><tw-passagedata pid="98" name="lore2" tags="" position="1725,1950" size="100,100"></tw-passagedata><tw-passagedata pid="99" name="continue3.3" tags="" position="2525,575" size="100,100">&lt;==&gt;
+[[Reach Lore|lore2]]
+[[Enter|enter]]</tw-passagedata><tw-passagedata pid="96" name="enter" tags="" position="1325,2200" size="100,100">&lt;==&gt;
+(if: $friends is true)[You don&#39;t need to pay for the reservation because the group have an extra wristband. They thank you first. 
+
+[[First dancefloor|first]]
+[[Second dancefloor|second]]](else-if: $friends is false and $soldi is false)[You can&#39;t afford the entry.
+
+[[Check Lore|back]]](else-if: $friends is false and $soldi is true)[You pay for your fee.
+[[First dancefloor|first]]
+[[Second dancefloor|second]]]
+
+</tw-passagedata><tw-passagedata pid="97" name="lore2" tags="" position="1600,2000" size="100,100"> &lt;==&gt;
+(if: $friends is true)[//&#39;You never disappoint!&#39;//
+ 
+He neither.
+Lore introduces you to his friends. You know them already but don&#39;t say anything.
+The loser among them confirm that he has seen you somewhere before. Where else but the club.
+Lore act like he is the founder of the club&#39;s rebels. 
+
+//&#39;Sta...&#39;//
+
+You are zoning out when a hand grabs you by the elbow and drags you away. The white friendly group has found you. 
+
+//&#39;You come with us. This is our night!!&#39;//
+
+[[Enter|enter]]](else:)[//&#39;You never disappoint!&#39;//
+ 
+He neither.
+Lore introduces you to his friends. You know them already but don&#39;t say anything.
+The loser among them confirm that he has seen you somewhere before. Where else but the club.
+Lore act like he is the founder of the club&#39;s rebels. 
+
+//&#39;Stay with us for a while.&#39;//
+
+[[I will se how it is inside|enter]]
+[[Stay|stay]]
+(set: $lore to true)]
+</tw-passagedata><tw-passagedata pid="98" name="continue3.3" tags="" position="2525,575" size="100,100">&lt;==&gt;
 //&#39;Sorry but we actually pay our bills.&#39;//
 
 You leave the bar.
@@ -751,11 +791,11 @@ The streets are lifeless. If it weren&#39;t for the traffic lights working, it c
 
 [[Move on|bar2]]
 (if: $lose is true and $k is true)[[[Hit some K|bottafake]]](else-if: $lose is false and $k is true)[[[Hit some K|botta]]]
-</tw-passagedata><tw-passagedata pid="100" name="nosh0" tags="" position="2075,2300" size="100,100">&lt;==&gt;
+</tw-passagedata><tw-passagedata pid="99" name="nosh0" tags="" position="2075,2300" size="100,100">&lt;==&gt;
 //&#39;What are your plans for the night?&#39;//
 
 [[Any ideas?|share0]]
-[[I&#39;m going to the club|nosh]]</tw-passagedata><tw-passagedata pid="101" name="share0" tags="" position="2050,2625" size="100,100">&lt;==&gt;
+[[I&#39;m going to the club|nosh]]</tw-passagedata><tw-passagedata pid="100" name="share0" tags="" position="2050,2625" size="100,100">&lt;==&gt;
 Sara&#39;s guy takes the Winston from another group and start rolling.
 
 //&#39;This is Riccardo.&#39;//
@@ -770,7 +810,32 @@ The joint burns out after three hits. Sara puts it out with her shoe and whisper
 //&#39;We move to my grandma’s place for the night. Do you wanna come?&#39;//
 
 [[Why not|casa]]
-[[I prefer the club|nosh]]</tw-passagedata></tw-storydata>
+[[I prefer the club|nosh]]</tw-passagedata><tw-passagedata pid="101" name="stay" tags="" position="1800,2700" size="100,100"></tw-passagedata><tw-passagedata pid="102" name="first" tags="" position="1450,2950" size="100,100"></tw-passagedata><tw-passagedata pid="103" name="second" tags="" position="1625,2925" size="100,100"></tw-passagedata><tw-passagedata pid="104" name="back" tags="" position="1100,2350" size="100,100"> &lt;==&gt;
+(if: $lore is true)[ Lore isn&#39;t there anymore. 
+You are alone. 
+
+[[Go home|home5]]
+(if: $k is true)[ [[Gift yourself a line|k]] ] ](else-if: $lore is false)[//&#39;Broke?&#39;//
+
+The group mocks you. 
+
+[[Chill|reply2]]]
+[[Who do they think they are?|reply1]]</tw-passagedata><tw-passagedata pid="105" name="home5" tags="" position="800,2300" size="100,100">&lt;==&gt;
+You walked for half an hour filling your head with every scene you could have done differently. Not just this and not just today.
+This was hard.
+You reach home and of course no one is awake waiting for you. You wanted this.
+
+[[Sleep|end5]]</tw-passagedata><tw-passagedata pid="106" name="k" tags="" position="800,2525" size="100,100">&lt;==&gt;
+You use your key to do the bumps. Each one bigger than the last. 
+The first. 
+The second. 
+The third. 
+The fourth.
+The fifth.
+The sixth.
+You hear barking in the distance.
+
+[[Stay on guard|look]]</tw-passagedata><tw-passagedata pid="107" name="reply1" tags="" position="1325,2650" size="100,100"></tw-passagedata><tw-passagedata pid="108" name="reply2" tags="" position="1150,2650" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
