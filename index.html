@@ -754,10 +754,11 @@ Lore smiles at you.
 [[First dancefloor|first]]
 [[Second dancefloor|second]]](else-if: $friends is false and $soldi is false)[You can&#39;t afford the entry.
 
-[[Check Lore|back]]](else-if: $friends is false and $soldi is true)[You pay for your fee.
-[[First dancefloor|first]]
-[[Second dancefloor|second]]]
+[[Check Lore|back]]](else-if: $friends is false and $soldi is true)[You pay the fee.
 
+[[First dancefloor|first]]
+[[Second dancefloor|second]]
+[[Mirror yourself|bath2]]]
 </tw-passagedata><tw-passagedata pid="97" name="lore2" tags="" position="1725,2000" size="100,100"> &lt;==&gt;
 (if: $friends is true)[//&#39;You never disappoint!&#39;//
  
@@ -768,7 +769,7 @@ Lore act like he is the founder of the club&#39;s rebels.
 
 //&#39;Sta...&#39;//
 
-You are zoning out when a hand grabs you by the elbow and drags you away. The white friendly group has found you. 
+You are zoning out when a hand grabs you by the elbow and drags you away. The coke friendly group has found you. 
 
 //&#39;You come with us. This is our night!!&#39;//
 
@@ -810,22 +811,30 @@ The joint burns out after three hits. Sara puts it out with her shoe and whisper
 //&#39;We move to my grandma’s place for the night. Do you wanna come?&#39;//
 
 [[Why not|casa]]
-[[I prefer the club|nosh]]</tw-passagedata><tw-passagedata pid="101" name="stay" tags="" position="1800,2700" size="100,100"></tw-passagedata><tw-passagedata pid="102" name="first" tags="" position="1500,2750" size="100,100"></tw-passagedata><tw-passagedata pid="103" name="second" tags="" position="1650,2750" size="100,100"></tw-passagedata><tw-passagedata pid="104" name="back" tags="" position="1100,2350" size="100,100"> &lt;==&gt;
-(if: $lore is true)[ Lore isn&#39;t there anymore. 
+[[I prefer the club|nosh]]</tw-passagedata><tw-passagedata pid="101" name="stay" tags="" position="1775,2650" size="100,100">&lt;==&gt;
+The clubbers come in waves. Some in groups, some alone. They want dope and they receive it. In just twenty minutes Lore gained twenty hundred. If you were him you would be much happier.
+
+//&#39;This idiot is wasted.&#39;//
+
+The group is too busty roasting the client for notice the bill on the ground. 
+
+[[Pick it up and cover the charge|enter2]]
+[[Don&#39;t leave|reply2]]</tw-passagedata><tw-passagedata pid="102" name="first" tags="" position="1375,2900" size="100,100"></tw-passagedata><tw-passagedata pid="103" name="second" tags="" position="1750,2900" size="100,100"></tw-passagedata><tw-passagedata pid="104" name="back" tags="" position="1100,2350" size="100,100"> &lt;==&gt;
+(if: $lore is true)[ Lore isn&#39;t here anymore. 
 You are alone. 
 
 [[Go home|home5]]
-(if: $k is true)[ [[Gift yourself a line|k]] ] ](else-if: $lore is false)[//&#39;Broke?&#39;//
+(if: $k is true)[ [[You need some peace|k]] ] ](else-if: $lore is false)[//&#39;Banned?&#39;//
 
 The group mocks you. 
 
-[[Who do they think they are?|reply1]]
-[[Chill|reply2]]]</tw-passagedata><tw-passagedata pid="105" name="home5" tags="" position="800,2300" size="100,100">&lt;==&gt;
+[[Play the victim|stay]]]
+[[Who do they think they are?|reply2]]</tw-passagedata><tw-passagedata pid="105" name="home5" tags="" position="800,2300" size="100,100">&lt;==&gt;
 You walked for half an hour filling your head with every scene you could have done differently. Not just this and not just today.
 This was hard.
 You reach home and of course no one is awake waiting for you. You wanted this.
 
-[[Sleep|end5]]</tw-passagedata><tw-passagedata pid="106" name="k" tags="" position="800,2525" size="100,100">&lt;==&gt;
+[[Sleep|end5]]</tw-passagedata><tw-passagedata pid="106" name="k" tags="" position="725,3025" size="100,100">&lt;==&gt;
 You use your key to do the bumps. Each one bigger than the last. 
 The first. 
 The second. 
@@ -835,7 +844,11 @@ The fifth.
 The sixth.
 You hear barking in the distance.
 
-[[Stay on guard|look]]</tw-passagedata><tw-passagedata pid="107" name="reply2" tags="" position="1300,2500" size="100,100"></tw-passagedata><tw-passagedata pid="108" name="reply1" tags="" position="1150,2575" size="100,100"></tw-passagedata></tw-storydata>
+[[Stay on guard|look]]</tw-passagedata><tw-passagedata pid="107" name="reply2" tags="" position="975,2775" size="100,100">&lt;==&gt;
+//&#39;You want problems jerk?&#39;//</tw-passagedata><tw-passagedata pid="108" name="enter2" tags="" position="1550,2675" size="100,100">&lt;==&gt;
+[[First dancefloor|first]]
+[[Second dancefloor|second]]
+[[Mirror yourself|bath2]]</tw-passagedata><tw-passagedata pid="109" name="bath2" tags="" position="1250,2775" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
