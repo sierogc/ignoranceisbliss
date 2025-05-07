@@ -163,9 +163,9 @@ They both track your movements, chuckling.
 
 [[Walk over|incontro]]
 [[Turn back|casa2]]</tw-passagedata><tw-passagedata pid="20" name="prisata" tags="" position="1250,550" size="100,100"> &lt;==&gt;
-//&#39;Damn.&#39;//
+//&#39;Damn. That&#39;s harsh.&#39;//
 
-Pause.
+He takes a long pause.
 
 //&#39;You need to relax.&#39;//
 
@@ -173,7 +173,7 @@ The plug opens his fist. There&#39;s a piece of grid paper folded into a strip.
 
 //&#39;Still cooked from last night?&#39;//
 
-[[Think about it|tasche]]
+[[You want it|tasche]]
 [[Leave|casa2]]</tw-passagedata><tw-passagedata pid="21" name="pok" tags="" position="1400,675" size="100,100"> &lt;==&gt;
 //&#39;Bet. You lowkey need a face lift.&#39;//
 
@@ -210,7 +210,7 @@ The two leaves.
 [[Continue|offparco]]
 (set: $soldi to false)
 (set: $k to true)</tw-passagedata><tw-passagedata pid="26" name="telefono" tags="" position="1575,225" size="100,100"> &lt;==&gt;
-You think you hear the guy calling you a lame ass something.
+You hear the friend calling you a lame ass something.
 Lore takes you by the shoulder.
 
 //&#39;This is what I get for showing up? Hand the iPhone and leave us alone.&#39;//
@@ -227,11 +227,11 @@ The duo walk off. You feel stupid.
 
 [[Continue|offparco]]
 [[Go home|casa3]]</tw-passagedata><tw-passagedata pid="28" name="telefono2" tags="" position="1750,350" size="100,100"> &lt;==&gt;
-//&#39;Do you take fit pics with this? This scrap looks good only as a plate.&#39;//
+//&#39;Do you take fit pics with this? This scrap looks good only for doing lines.&#39;//
 
 He takes the iPhone and hand the blow.
 
-//&#39;Business.&#39;//
+//&#39;Sorry but this is business.&#39;//
 
 He coughs.
 
@@ -260,7 +260,6 @@ He is waiting for your next move.
 </tw-passagedata><tw-passagedata pid="32" name="offparco" tags="" position="1725,575" size="100,100"> &lt;==&gt;
 [[You need a coffe|bar]]
 (if: $k is true)[ [[Enjoy what you have|botta]] ]</tw-passagedata><tw-passagedata pid="33" name="botta" tags="" position="1575,675" size="100,100">&lt;==&gt;
-You are all alone. 
 You crush the rock at the bus stop. 
 
 [[First bump|botta2]]
@@ -268,7 +267,7 @@ You crush the rock at the bus stop.
 It feels good.
 
 [[Another one|botta3]]</tw-passagedata><tw-passagedata pid="35" name="botta3" tags="" position="1575,975" size="100,100">&lt;==&gt;
-It&#39;s almost over. It&#39;s kicking.
+It&#39;s kicking. And it&#39;s almost over.
 
 [[Finish what you started|khole]]
 [[Stop]]
@@ -286,20 +285,20 @@ You are not ready for an interaction yet.
 
 [[Yes... I mean, no...|continue]]
 (if: $tel is true)[ [[Give her the iPhone|continuetel]] ](if: $soldi is true)[ [[Give her the money|continuesoldi]] ]
-</tw-passagedata><tw-passagedata pid="38" name="Vomit" tags="" position="1575,1325" size="100,100"> &lt;==&gt;
+</tw-passagedata><tw-passagedata pid="38" name="Vomit" tags="" position="1550,1300" size="100,100"> &lt;==&gt;
 You bend over and puke some sort of pale liquid. No sound, no fragrance.
-You are back from the trip. There is a pack of cigs on the ground.
+You are back from the trip. There is a pack of cigs on the ground. You take it. 
 
-[[I want to check something|check]]
+[[You want to check something|check]]
 [[You need the club|club]]
 [[You had enough|casa4]]
 (set: $sigarette to true)</tw-passagedata><tw-passagedata pid="39" name="club" tags="" position="1625,1575" size="100,100"> &lt;==&gt;
 You got to the club late and things are already in motion. Place is packed.
 At the entrance, the first wave of clubbers are sitting around, drinking, chatting, trying to hit on whoever. Lore is in a corner talking with some people.
-The resident DJ is playing international hits. The energy feels right.
+The DJ is playing international hits. The energy feels right.
 
 [[Enter|enter]]
-[[Reach Lore|lore2]]
+[[Yo, Lore|lore2]]
 (if: $sigarette is true)[ [[Have a smoke]] ]</tw-passagedata><tw-passagedata pid="40" name="casa4" tags="" position="975,1650" size="100,100"> &lt;==&gt;
 You made it back without saying a single word. 
 You don&#39;t remember a face. Can’t even recall the road.
@@ -368,7 +367,7 @@ You can&#39;t find the blow. You lost it in the bar. How&#39;s that even possibl
 [[What?!|bar2]]
 (set: $k to false)</tw-passagedata><tw-passagedata pid="52" name="macchina" tags="" position="2350,1150" size="100,100">&lt;==&gt;
 The car smells like ashtray. The radio is playing nostalgic trap music. 
-They&#39;re all dressed in black with sunglasses, except the driver who has a pink crop top.
+They&#39;re all dressed in black with sunglasses, except Luca, the driver who has a pink crop top.
 Something feels wrong. It surely will gets worse.
 
 //&#39;We are trying to get dope for tonight. You in?&#39;//
@@ -428,7 +427,7 @@ They all stare at you. It&#39;s the way you look or the way you act? Either way 
 
 [[Do you make espresso?|espresso]]
 [[Where is the water?|water]]</tw-passagedata><tw-passagedata pid="60" name="check" tags="" position="2050,1750" size="100,100">&lt;==&gt;
-You went to the parking lot. It&#39;s the usual meetup spot.
+You went to the parking lot. It&#39;s the usual meetup spot before any important event.
 There are about thirty people. You feel watched. 
 
 [[Browse the crowd|Continue]]
@@ -528,7 +527,7 @@ It is an image of a yin-yang emoji doing the finger.
 [[Source?|offer]]</tw-passagedata><tw-passagedata pid="71" name="offer" tags="" position="2350,2275" size="100,100">&lt;==&gt;
 (if: $sigarette is true)[//&#39;This new meme page.&#39;//
 
-Sara is stoned but nothing out of the ordinary. Her new situation is playing it cool, probably earned points with the big city charme. 
+Sara is stoned but nothing out of the ordinary. Her new situationship is playing it cool, probably earned points with the big city charme. 
 
 //&#39;Sorry but we need some tobacco to close this blunt or it will take forever...&#39;//
 
@@ -539,7 +538,7 @@ She’s always been the kind of person who put her own above anything.
 [[Share a smoke|share]]
 [[That was the last one|nosh0]]](else:)[//&#39;This new meme page.&#39;//
 
-Sara is a bit lit but nothing out of the ordinary. Her new situation is playing it cool, probably earned some points with the big city charme. 
+Sara is a bit lit but nothing out of the ordinary. Her new situationship is playing it cool, probably earned some points with the big city charme. 
 
 //&#39;Without a cig it will take forever to roll this blunt.&#39;//
 
@@ -712,7 +711,7 @@ This house somehow feels close to your memories.
 
 [[Check the couple|terrazza]]
 [[Take a look|look]]
-(set: $denti to true)</tw-passagedata><tw-passagedata pid="90" name="look" tags="" position="1100,3775" size="100,100">Root finale in costruzione
+(set: $denti to true)</tw-passagedata><tw-passagedata pid="90" name="look" tags="" position="1025,4200" size="100,100">Root finale in costruzione
 [[Restart|start]]</tw-passagedata><tw-passagedata pid="91" name="terrazza" tags="" position="1700,3400" size="100,100">&lt;==&gt;
 Sara and Riccardo are on their phones watching reels. They act already like a couple.
 
@@ -735,8 +734,7 @@ Sara has put her Spotify&#39;s moody daily mix on the speaker.
 
 //&#39;My grandma’s probably crying thinking about what became of her house.&#39;//
 
-No one is awake when you get back. 
-(if: $denti is true)[You test the stolen toothpaste. It tastes metallic.]
+No one is awake when you get back. (if: $denti is true)[You test the stolen toothpaste. It tastes metallic.]
 
 [[[Sleep|end5]]]</tw-passagedata><tw-passagedata pid="94" name="end5" tags="" position="75,3575" size="100,100">&lt;==&gt;
  ###Ignorance is Bliss
@@ -752,7 +750,8 @@ Lore smiles at you.
 (if: $friends is true)[You don&#39;t need to pay for the reservation because the group have an extra wristband. It&#39;s gratitude. 
 
 [[First dancefloor|first]]
-[[Second dancefloor|second]]](else-if: $friends is false and $soldi is false)[You can&#39;t afford the entry.
+[[Second dancefloor|second]]
+[[Mirror yourself|bath2]]](else-if: $friends is false and $soldi is false)[You can&#39;t afford the entry.
 
 [[Check Lore|back]]](else-if: $friends is false and $soldi is true)[You pay the fee.
 
@@ -780,9 +779,9 @@ Lore introduces you to his friends. You know them already but don&#39;t say anyt
 The loser among them confirm that he has seen you somewhere before. Where else but the club.
 Lore act like he is the founder of the club&#39;s rebels. 
 
-//&#39;Stay with us for a while.&#39;//
+//&#39;Stay with us for a while. We are waiting someone.&#39;//
 
-[[I will se how it is inside|enter]]
+[[You want to see inside|enter]]
 [[Stay|stay]]
 (set: $lore to true)]</tw-passagedata><tw-passagedata pid="98" name="continue3.3" tags="" position="2525,575" size="100,100">&lt;==&gt;
 //&#39;Sorry but we actually pay our bills.&#39;//
@@ -793,7 +792,10 @@ The streets are lifeless. If it weren&#39;t for the traffic lights working, it c
 [[Move on|bar2]]
 (if: $lose is true and $k is true)[[[Hit some K|bottafake]]](else-if: $lose is false and $k is true)[[[Hit some K|botta]]]
 </tw-passagedata><tw-passagedata pid="99" name="nosh0" tags="" position="2075,2300" size="100,100">&lt;==&gt;
-//&#39;What are your plans for the night?&#39;//
+A knife for an eye. 
+She will remember this. 
+
+//&#39;Whatever. What are your plans for the night?&#39;//
 
 [[Any ideas?|share0]]
 [[I&#39;m going to the club|nosh]]</tw-passagedata><tw-passagedata pid="100" name="share0" tags="" position="2050,2625" size="100,100">&lt;==&gt;
@@ -819,7 +821,15 @@ The clubbers come in waves. Some in groups, some alone. They want dope and they 
 The group is too busty roasting the client for notice the bill on the ground. 
 
 [[Pick it up and cover the charge|enter2]]
-[[Don&#39;t leave|reply2]]</tw-passagedata><tw-passagedata pid="102" name="first" tags="" position="1375,2900" size="100,100"></tw-passagedata><tw-passagedata pid="103" name="second" tags="" position="1750,2900" size="100,100"></tw-passagedata><tw-passagedata pid="104" name="back" tags="" position="1100,2350" size="100,100"> &lt;==&gt;
+[[Don&#39;t leave|reply2]]</tw-passagedata><tw-passagedata pid="102" name="first" tags="" position="1400,2875" size="100,100">&lt;==&gt;
+The music is ok and the dancers are fun to watch. You try to match but no one bites. You&#39;re probably not going to score tonight.
+The only thing left to do is one.
+
+[[Dance]]</tw-passagedata><tw-passagedata pid="103" name="second" tags="" position="1775,2875" size="100,100">&lt;==&gt;
+The second dancefloor is the safe zone. 
+There&#39;s a YouTube playlist playing in the background and it&#39;s the worst thing ever created.
+If you&#39;re hoping to go home with someone or just trying to pull the piece of yourself together, this is your place. Why are you even here?
+(if: $friends is true)[</tw-passagedata><tw-passagedata pid="104" name="back" tags="" position="1100,2350" size="100,100"> &lt;==&gt;
 (if: $lore is true)[ Lore isn&#39;t here anymore. 
 You are alone. 
 
@@ -844,11 +854,56 @@ The fifth.
 The sixth.
 You hear barking in the distance.
 
-[[Stay on guard|look]]</tw-passagedata><tw-passagedata pid="107" name="reply2" tags="" position="975,2775" size="100,100">&lt;==&gt;
-//&#39;You want problems jerk?&#39;//</tw-passagedata><tw-passagedata pid="108" name="enter2" tags="" position="1550,2675" size="100,100">&lt;==&gt;
+[[Stay on guard|look]]</tw-passagedata><tw-passagedata pid="107" name="reply2" tags="" position="925,2800" size="100,100">&lt;==&gt;
+//&#39;Do you have something to say junkie?&#39;//
+
+Lore is quiet. He already choose his role for the story.
+Now it&#39;s your turn.
+
+[[Yes, I have|move]]
+[[Step back|enter2]]
+</tw-passagedata><tw-passagedata pid="108" name="enter2" tags="" position="1525,2550" size="100,100">&lt;==&gt;
 [[First dancefloor|first]]
 [[Second dancefloor|second]]
-[[Mirror yourself|bath2]]</tw-passagedata><tw-passagedata pid="109" name="bath2" tags="" position="1250,2775" size="100,100"></tw-passagedata></tw-storydata>
+[[Mirror yourself|bath2]]</tw-passagedata><tw-passagedata pid="109" name="bath2" tags="" position="1250,2775" size="100,100">&lt;==&gt;
+(if: $cocco is true)[The line isn&#39;t a problem and it doesn&#39;t take much time to get in. 
+You&#39;re not really dressed for the night, but it&#39;s fine. 
+Just as you&#39;re about to close the door, you hear a knock.
+
+&quot;Let&#39;s do one like the old times.&quot;
+
+Luca has already spilled some alcohol on his crop top. He hands you his phone and the cocaine.
+
+[[You have no choice|coke]]](else:)[The line isn&#39;t a problem and it doesn&#39;t take much time to get in.
+You&#39;re not really dressed for the night, but it&#39;s fine. 
+The face in the mirror is just the result of your choices.
+
+[[You hate what you see|bath3]]
+[[You love what you see|bath3]]]
+</tw-passagedata><tw-passagedata pid="110" name="coke" tags="" position="1300,3300" size="100,100">&lt;==&gt;
+It&#39;s the biggest line you have ever seen. How fast life changes.
+You love CK. But why is there a dog in a club&#39;s bath?
+
+[[Am I going crazy?!|look]]</tw-passagedata><tw-passagedata pid="111" name="bath3" tags="" position="1200,3125" size="100,100">&lt;==&gt;
+Reality check. You look like you just act in an episode of Skins directed by Albert Serra.
+
+[[First dancefloor|first]]
+[[Second dancefloor|second]]
+(if: $k is true)[ [[This is the time|k]]</tw-passagedata><tw-passagedata pid="112" name="move" tags="" position="925,2925" size="100,100">&lt;==&gt;
+Two of them were waiting for something like this. They are the first to act threatening. 
+Lore is close by, but he hasn&#39;t made a move yet.
+In a second they all jump on you. The first punch is from Lore.
+After a while, you can&#39;t fight back anymore  and you&#39;re on the ground, trying to cover your head. You hear the bouncers coming closer and a dog barking. Whose dog is this?
+
+[[You think you know|look]]</tw-passagedata><tw-passagedata pid="113" name="Dance" tags="" position="1500,3125" size="100,100">&lt;==&gt;
+You&#39;re not completely in your zone in this.
+The music is like the ultimate zeitgeist. It&#39;s the best feeling there is. In another life, you were definitely a musician.
+
+[[Continue|look0]]</tw-passagedata><tw-passagedata pid="114" name="look0" tags="" position="1425,3350" size="100,100">&lt;==&gt;
+Sound is the only thing you need. What the whole world deserve.
+You have your vital space and the moves for the night. Nothing can stop you now. 
+
+[[A dog is barking|look]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
