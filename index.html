@@ -295,7 +295,7 @@ You are back from the trip. There is a pack of cigs on the ground. You take it.
 (set: $sigarette to true)</tw-passagedata><tw-passagedata pid="39" name="club" tags="" position="1625,1575" size="100,100"> &lt;==&gt;
 You got to the club late and things are already in motion. Place is packed.
 At the entrance, the first wave of clubbers are sitting around, drinking, chatting, trying to hit on whoever. Lore is in a corner talking with some people.
-The DJ is playing international hits. The energy feels right.
+There are different rooms. The energy feels right.
 
 [[Enter|enter]]
 [[Yo, Lore|lore2]]
@@ -822,14 +822,24 @@ The group is too busty roasting the client for notice the bill on the ground.
 
 [[Pick it up and cover the charge|enter2]]
 [[Don&#39;t leave|reply2]]</tw-passagedata><tw-passagedata pid="102" name="first" tags="" position="1400,2875" size="100,100">&lt;==&gt;
-The music is ok and the dancers are fun to watch. You try to match but no one bites. You&#39;re probably not going to score tonight.
-The only thing left to do is one.
+The music is not your thing and the dancers move like they are in a commercial. You try to match but no one bites. You&#39;re probably not going to score tonight. Not here.
+(if: $friends is true)[Luca&#39;s friends are here without him. They are flirting with some overseas.] The only thing left to do is leave this hell.
 
-[[Dance]]</tw-passagedata><tw-passagedata pid="103" name="second" tags="" position="1775,2875" size="100,100">&lt;==&gt;
-The second dancefloor is the safe zone. 
-There&#39;s a YouTube playlist playing in the background and it&#39;s the worst thing ever created.
-If you&#39;re hoping to go home with someone or just trying to pull the piece of yourself together, this is your place. Why are you even here?
-(if: $friends is true)[</tw-passagedata><tw-passagedata pid="104" name="back" tags="" position="1100,2350" size="100,100"> &lt;==&gt;
+[[Second dancefloor|second]]
+[[Bathroom|bath2]]</tw-passagedata><tw-passagedata pid="103" name="second" tags="" position="1775,2900" size="100,100">&lt;==&gt;
+(if: $friends is true)[The second dancefloor is the safe zone. There&#39;s a YouTube playlist playing in the background and it&#39;s something that can either heal or kill you right now.
+The clubbers are mostly on the floor, in various position. The most self-centered are leaning against the wall. If you&#39;re hoping to go home with someone or just trying to pull the piece together, this is the place.
+
+//&#39;Here you are!&#39;//
+
+It&#39;s Luca. He takes your hand and pulls you away. 
+
+[[Continue|bath2.2]]](else:)[The second dancefloor is the safe zone. There&#39;s a YouTube playlist playing in the background and the selection is something that can either heal or kill you.
+The clubbers are mostly on the floor, in various position. The most self-centered are leaning against the wall. If you&#39;re hoping to go home with someone or just trying to pull the piece together, this is the place.
+
+[[First dancefloor|first]]
+[[Third dancefloor|third]]
+[[Wait|wait]]]</tw-passagedata><tw-passagedata pid="104" name="back" tags="" position="1100,2350" size="100,100"> &lt;==&gt;
 (if: $lore is true)[ Lore isn&#39;t here anymore. 
 You are alone. 
 
@@ -865,45 +875,61 @@ Now it&#39;s your turn.
 </tw-passagedata><tw-passagedata pid="108" name="enter2" tags="" position="1525,2550" size="100,100">&lt;==&gt;
 [[First dancefloor|first]]
 [[Second dancefloor|second]]
+[[Third dancefloor|third]]
 [[Mirror yourself|bath2]]</tw-passagedata><tw-passagedata pid="109" name="bath2" tags="" position="1250,2775" size="100,100">&lt;==&gt;
-(if: $cocco is true)[The line isn&#39;t a problem and it doesn&#39;t take much time to get in. 
-You&#39;re not really dressed for the night, but it&#39;s fine. 
+(if: $cocco is true)[It doesn&#39;t take long for the queue. Compared to the ones coming in and out, your style can&#39;t really compare, but that&#39;s okay. It is what it is.
 Just as you&#39;re about to close the door, you hear a knock.
 
-&quot;Let&#39;s do one like the old times.&quot;
+//&#39;Let&#39;s do one for the old times.&#39;//
 
 Luca has already spilled some alcohol on his crop top. He hands you his phone and the cocaine.
 
-[[You have no choice|coke]]](else:)[The line isn&#39;t a problem and it doesn&#39;t take much time to get in.
-You&#39;re not really dressed for the night, but it&#39;s fine. 
-The face in the mirror is just the result of your choices.
+[[You have no choice|coke]]](else:)[You don&#39;t have to wait much. Compared to the ones coming in and out, your style can&#39;t really compare, but that&#39;s okay. It is what it is.
+The face in the mirror is  the result of your choices.
 
+[[You like what you see|bath3]]]
 [[You hate what you see|bath3]]
-[[You love what you see|bath3]]]
 </tw-passagedata><tw-passagedata pid="110" name="coke" tags="" position="1300,3300" size="100,100">&lt;==&gt;
 It&#39;s the biggest line you have ever seen. How fast life changes.
 You love CK. But why is there a dog in a club&#39;s bath?
 
-[[Am I going crazy?!|look]]</tw-passagedata><tw-passagedata pid="111" name="bath3" tags="" position="1200,3125" size="100,100">&lt;==&gt;
-Reality check. You look like you just act in an episode of Skins directed by Albert Serra.
+[[Am I going crazy?|look]]</tw-passagedata><tw-passagedata pid="111" name="bath3" tags="" position="1200,3125" size="100,100">&lt;==&gt;
+You need a reality check.
 
 [[First dancefloor|first]]
 [[Second dancefloor|second]]
-(if: $k is true)[ [[This is the time|k]]</tw-passagedata><tw-passagedata pid="112" name="move" tags="" position="925,2925" size="100,100">&lt;==&gt;
+(if: $k is true)[ [[Take a hit|k]] ]</tw-passagedata><tw-passagedata pid="112" name="move" tags="" position="925,2925" size="100,100">&lt;==&gt;
 Two of them were waiting for something like this. They are the first to act threatening. 
 Lore is close by, but he hasn&#39;t made a move yet.
 In a second they all jump on you. The first punch is from Lore.
 After a while, you can&#39;t fight back anymore  and you&#39;re on the ground, trying to cover your head. You hear the bouncers coming closer and a dog barking. Whose dog is this?
 
-[[You think you know|look]]</tw-passagedata><tw-passagedata pid="113" name="Dance" tags="" position="1500,3125" size="100,100">&lt;==&gt;
-You&#39;re not completely in your zone in this.
-The music is like the ultimate zeitgeist. It&#39;s the best feeling there is. In another life, you were definitely a musician.
+[[You think you know|look]]</tw-passagedata><tw-passagedata pid="113" name="Dance" tags="" position="1525,3075" size="100,100">&lt;==&gt;
+The music is the ultimate zeitgeist. It&#39;s the best feeling there is. In your past life, you were definitely a musician.
 
-[[Continue|look0]]</tw-passagedata><tw-passagedata pid="114" name="look0" tags="" position="1425,3350" size="100,100">&lt;==&gt;
+[[Dance|look0]]</tw-passagedata><tw-passagedata pid="114" name="look0" tags="" position="1425,3350" size="100,100">&lt;==&gt;
 Sound is the only thing you need. What the whole world deserve.
-You have your vital space and the moves for the night. Nothing can stop you now. 
+You have your vital space and the moves for the night. Nothing should stop you now. 
 
-[[A dog is barking|look]]</tw-passagedata></tw-storydata>
+[[A dog is barking|look]]</tw-passagedata><tw-passagedata pid="115" name="third" tags="" position="1550,2775" size="100,100">&lt;==&gt;
+The atmosphere is perfect. Soft and dense white light move past the corpse, flashing the DJ at the center of the floor. 
+The clubbers are into it. There are some friendly faces around too. No one is using their phone. You needed this.
+You find a spot just before the center of the floor and let go.
+
+[[Dance|Dance]]</tw-passagedata><tw-passagedata pid="116" name="bath2.2" tags="" position="1825,3100" size="100,100">&lt;==&gt;
+A month was enough to transform Luca in a club rat. You remember his first time. It was fun being the one to teach for once, but now he&#39;s the one ahead. 
+The bath queue is thin and the both of you enter in a flash.
+
+//&#39;We know how to handle this. Do your best.&#39;//
+
+Luca hands you his phone and the cocaine.
+
+[[Do it|coke]]</tw-passagedata><tw-passagedata pid="117" name="wait" tags="" position="1675,3025" size="100,100">&lt;==&gt;
+It&#39;s killing you.
+
+[[First dancefloor|first]]
+[[Third dancefloor|third]]
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
