@@ -57,10 +57,11 @@ The call ends.
 
 [[Take the phone|stanza]]</tw-passagedata><tw-passagedata pid="5" name="stanza" tags="" position="575,1125" size="100,100"> &lt;==&gt;
 The place is a mess. Looks like no one’s ever cleaned it.
-It’s a studio, with just the kitchen and bathroom.
+It’s a studio, with just the kitchen and bathroom. No trace of the owner, this is more a stash than a home.
 You spot the front door and realise you&#39;re in the projects. You remember one of your childhood friend used to live with his mother in the same block.
 
 [[Call back Lore (Work)|conv2]]
+[[Anybody home?|calls]]
 [[Leave the apartment|esci]]</tw-passagedata><tw-passagedata pid="6" name="end" tags="" position="500,650" size="100,100"> &lt;==&gt;
 You took the bus and got back in less than an hour.
 The headache is getting worse, but you have some meds in the closet.
@@ -285,11 +286,12 @@ You are not ready for an interaction yet.
 
 [[Yes... I mean, no...|continue]]
 (if: $tel is true)[ [[Give her the iPhone|continuetel]] ](if: $soldi is true)[ [[Give her the money|continuesoldi]] ]
-</tw-passagedata><tw-passagedata pid="38" name="Vomit" tags="" position="1550,1300" size="100,100"> &lt;==&gt;
+</tw-passagedata><tw-passagedata pid="38" name="Vomit" tags="" position="1550,1275" size="100,100"> &lt;==&gt;
 You bend over and puke some sort of pale liquid. No sound, no fragrance.
-You are back from the trip. There is a pack of cigs on the ground. You take it. 
+You are back from the trip. 
+There is a pack of cigs on the ground. You take it. 
 
-[[You want to check something|check]]
+[[You have to go somewhere|bar2]]
 [[You need the club|club]]
 [[You had enough|casa4]]
 (set: $sigarette to true)</tw-passagedata><tw-passagedata pid="39" name="club" tags="" position="1625,1575" size="100,100"> &lt;==&gt;
@@ -331,8 +333,7 @@ Your stomach twists a little. Maybe you’re hungry. Maybe not. Hard to tell.
 (set: $tel to false)</tw-passagedata><tw-passagedata pid="45" name="continuesoldi" tags="" position="2025,950" size="100,100">&lt;==&gt;
 //&#39;Thanks.&#39;//
 
-You&#39;re stumbling, legs heavy.
-You have no clue of where you’re headed.
+You&#39;re stumbling, legs heavy. You have no clue of where you’re headed.
 Your stomach twists a little. Maybe you’re hungry. Maybe not. Hard to tell.
 
 [[Continue|bar2]]
@@ -342,7 +343,7 @@ The barista’s looking at you like you have just landed from Mars.
 
 [[Do you make espresso?|espresso]]
 [[Leave|continue3]]</tw-passagedata><tw-passagedata pid="47" name="espresso" tags="" position="2150,475" size="100,100">&lt;==&gt;
-The cashier laughs.
+The cashier wants you out.
 
 //&#39;This is a coffe. We must do espresso.&#39;//
 
@@ -369,8 +370,7 @@ You can&#39;t find the blow. You lost it in the bar. How&#39;s that even possibl
 [[What?!|bar2]]
 (set: $k to false)</tw-passagedata><tw-passagedata pid="52" name="macchina" tags="" position="2350,1150" size="100,100">&lt;==&gt;
 The car smells like ashtray. The radio is playing nostalgic trap music. 
-They&#39;re all dressed in black with sunglasses, except Luca, the driver, who has a pink crop top.
-Something feels wrong.
+They&#39;re all dressed in black with sunglasses, except Luca, the driver, who has a slim pink crop top. He has something up his sleeves.
 
 //&#39;We are trying to get dope for tonight. You in?&#39;//
 
@@ -399,11 +399,13 @@ They started this habit because of you and your parties. That&#39;s not your fau
 
 [[Show the way|projects]]</tw-passagedata><tw-passagedata pid="56" name="ignora2" tags="" position="625,950" size="100,100"> &lt;==&gt;
 The place is a mess. Looks like no one’s ever cleaned it.
-It’s a studio, with just the kitchen and bathroom.
+It’s a studio, with just the kitchen and bathroom. No trace of the owner, this is more a stash than a home.
 You spot the front door and realise you&#39;re in the projects. You remember one of your childhood friend used to live with his mother in the same block.
 
 [[Turn back and answer the call|conv1.2]]
-[[Leave and go home|end]]</tw-passagedata><tw-passagedata pid="57" name="conv1.3" tags="" position="425,1125" size="100,100"> &lt;==&gt;
+[[Anybody home?|callss]]
+[[Leave and go home|end]]
+</tw-passagedata><tw-passagedata pid="57" name="conv1.3" tags="" position="425,1125" size="100,100"> &lt;==&gt;
 A distorted voice says:
 
 //&#39;Yo, where you at? I’m out here at the betting shop.&#39;//
@@ -412,7 +414,7 @@ The call ends.
 
 [[Call back Lore (Work)|conv2.2]]
 [[Put the phone in your pocket and leave the apartment|esci]]</tw-passagedata><tw-passagedata pid="58" name="ignore" tags="" position="2025,1275" size="100,100">&lt;==&gt;
-They can&#39;t be ignored so easily.
+They can&#39;t believe their ears.
 
 //&#39;You. Are. Busy. We totally buy that.&#39;//
 
@@ -445,20 +447,18 @@ Some guy cut the way.
 [[We are going to meet a friend|comprare]]</tw-passagedata><tw-passagedata pid="62" name="comprare" tags="" position="2825,1300" size="100,100">&lt;==&gt;
 //&#39;This way. They must wait outside.&#39;//
 
-The spotter opens a door that shows a stairs going down to a basement. 
+The spotter opens a door that shows a stair going down to a basement. 
 The room is dim. The smell of food and something heavier hits you as soon as you step in. 
 The pusher is playing FIFA. Next to him, an egirl is slowly smoking a joint while lying on a sofa. A pitbull, sitting beside her, guards the door. 
 On the table there are tons of plastic bags and various weed buds in amounts you couldn&#39;t even begin to count. 
 
 [[How much for a gram of coke?|Pay2]]</tw-passagedata><tw-passagedata pid="63" name="Pay" tags="" position="2650,1575" size="100,100">&lt;==&gt;
-The group is in the exact same position you left them.
-Luca is waiting for change, then realises it&#39;s useless. 
+The group is in the exact same position you left them. Luca is waiting for change, then realises it&#39;s useless. 
 You flash the stash.
 
 //&#39;How was it?&#39;//
 
-They have what they wanted.
-You are back in the car.
+They have what they wanted and you all are back in the car.
 
 [[Let&#39;s save it for the night|club]]
 [[Do one for the plot|bottaauto]]
@@ -826,20 +826,19 @@ The group is too busty roasting the client for notice the bill on the ground.
 
 [[Pick it up and cover the charge|enter2]]
 [[Don&#39;t leave|reply2]]</tw-passagedata><tw-passagedata pid="102" name="first" tags="" position="1400,2875" size="100,100">&lt;==&gt;
-The music is not your thing and the dancers move like they are in a commercial. You try to match but no one bites. You&#39;re probably not going to score tonight. Not here.
-(if: $friends is true)[Luca&#39;s friends are here without him. They are flirting with some overseas.] The only thing left to do is leave this hell.
+The music is not your thing and the dancers move like they are in a commercial. You try to match but no one bites. (if: $friends is true)[Luca&#39;s friends are here without him. They are flirting with some overseas.] You&#39;re probably not going to score tonight. Not here. 
 
 [[Second dancefloor|second]]
 [[Bathroom|bath2]]</tw-passagedata><tw-passagedata pid="103" name="second" tags="" position="1775,2900" size="100,100">&lt;==&gt;
 (if: $friends is true)[The second dancefloor is the safe zone. There&#39;s a YouTube playlist playing in the background and it&#39;s something that can either heal or kill you right now.
-The clubbers are mostly on the floor, in various position. The most self-centered are leaning against the wall. If you&#39;re hoping to go home with someone or just trying to pull the pieces together, this is the place.
+The clubbers are mostly on the floor, in various position. The most ego loaded are leaning against the wall. If you&#39;re hoping to go home with someone or just trying to pull the pieces together, this is the place.
 
 //&#39;Here you are!&#39;//
 
 It&#39;s Luca. He takes your hand and pulls you away. 
 
 [[Continue|bath2.2]]](else:)[The second dancefloor is the safe zone. There&#39;s a YouTube playlist playing in the background and the selection is something that can either heal or kill you.
-The clubbers are mostly on the floor, in various position. The most self-centered are leaning against the wall. If you&#39;re hoping to go home with someone or just trying to pull the pieces together, this is the place.
+The clubbers are mostly on the floor, in various position. The most ego loaded are leaning against the wall. If you&#39;re hoping to go home with someone or just trying to pull the pieces together, this is the place.
 
 [[First dancefloor|first]]
 [[Third dancefloor|third]]
@@ -855,7 +854,7 @@ The group mocks you.
 [[Play the victim|stay]]]
 [[Who do they think they are?|reply2]]</tw-passagedata><tw-passagedata pid="105" name="home5" tags="" position="800,2300" size="100,100">&lt;==&gt;
 You walked for half an hour filling your head with every scene you could have done differently. Not just this and not just today.
-You reach home and of course no one is awake waiting for you. You wanted this.
+You reach home and of course no one is awake waiting for you. You wanted this solitude.
 
 [[Sleep|end5]]</tw-passagedata><tw-passagedata pid="106" name="k" tags="" position="725,3025" size="100,100">&lt;==&gt;
 You use your key to do the bumps. Each one stronger than the last. 
@@ -914,8 +913,8 @@ The music is the ultimate zeitgeist. It&#39;s the best feeling there is. In your
 Sound is the only thing you need. What the whole world deserve.
 You have your space and the moves for the night. Nothing should stop you now. 
 
-[[A dog is barking|look]]</tw-passagedata><tw-passagedata pid="115" name="third" tags="" position="1550,2775" size="100,100">&lt;==&gt;
-The atmosphere is perfect. Soft and dense white light move past the corpse, flashing the DJ at the center of the floor. 
+[[Dance|dances]]</tw-passagedata><tw-passagedata pid="115" name="third" tags="" position="1550,2775" size="100,100">&lt;==&gt;
+The atmosphere is perfect. Soft and dense white lights moves past the corpse, flashing the DJ at the center of the floor. 
 The clubbers are into it. There are some friendly faces around too. No one is using their phone. You needed this.
 You find a spot just before the center of the floor and let go.
 
@@ -941,17 +940,41 @@ Teeth clenched.
 [[Run|run3]]</tw-passagedata><tw-passagedata pid="120" name="run3" tags="" position="1050,4100" size="100,100">&lt;==&gt;
 He is fast and you are slow.
 
-[[Run|run4]]</tw-passagedata><tw-passagedata pid="121" name="run4" tags="" position="1050,4225" size="100,100">&lt;==&gt;
+[[Run anyway|run4]]</tw-passagedata><tw-passagedata pid="121" name="run4" tags="" position="1050,4225" size="100,100">&lt;==&gt;
 You&#39;re falling into the black hole. 
 
-[[Run|run5]]</tw-passagedata><tw-passagedata pid="122" name="run5" tags="" position="1050,4350" size="100,100">&lt;==&gt;
+[[Yes, you are|run5]]</tw-passagedata><tw-passagedata pid="122" name="run5" tags="" position="1050,4350" size="100,100">&lt;==&gt;
 You&#39;re alone.
 The same as always.
 
-[[Run|run6]]</tw-passagedata><tw-passagedata pid="123" name="run6" tags="" position="1050,4475" size="100,100">&lt;==&gt;
+[[You made it like this|run6]]</tw-passagedata><tw-passagedata pid="123" name="run6" tags="" position="1050,4475" size="100,100">&lt;==&gt;
 There&#39;s nothing more to think about. 
 
-[[Sleep|end5]]</tw-passagedata></tw-storydata>
+[[Sleep|end5]]</tw-passagedata><tw-passagedata pid="124" name="callss" tags="" position="850,975" size="100,100">&lt;==&gt;
+No one home. 
+
+[[Turn back and answer the call|conv1.2]]
+[[Leave and go home|end]]
+[[Maybe they didn&#39;t hear|callss2]]</tw-passagedata><tw-passagedata pid="125" name="calls" tags="" position="725,1250" size="100,100">&lt;==&gt;
+No one home. 
+
+[[Call back Lore (Work)|conv2]]
+[[Leave the apartment|esci]]
+[[Maybe they didn&#39;t hear|calls2]]</tw-passagedata><tw-passagedata pid="126" name="callss2" tags="" position="1075,1100" size="100,100">&lt;==&gt;
+Ain&#39;t nobody here.
+
+[[Try again|callss2]]
+[[Turn back and answer the call|conv1.2]]
+[[Leave and go home|end]]</tw-passagedata><tw-passagedata pid="127" name="calls2" tags="" position="925,1300" size="100,100">&lt;==&gt;
+Ain&#39;t nobody here.
+
+[[Try again|calls2]]
+[[Call back Lore (Work)|conv2]]
+[[Leave the apartment|esci]]
+</tw-passagedata><tw-passagedata pid="128" name="dances" tags="" position="1225,3500" size="100,100">&lt;==&gt;
+A dog is barking.
+
+[[Where?|look]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
