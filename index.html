@@ -39,7 +39,7 @@ There is an iPhone ringing somewhere.
 (set: $lore to false)</tw-passagedata><tw-passagedata pid="2" name="cerca" tags="" position="225,825" size="100,100"> &lt;==&gt;
 The iPhone was hidden under the sheets. It&#39;s yours.
 Screen’s cracked but seems to work. You see some bad scratches on the back and it only has 8% battery. 
-The number calling’s saved as Lore (Work).
+The person calling is saved as Lore (Work).
 
 [[Answer|conv1]]
 [[Throw the phone aside|ignora1]]</tw-passagedata><tw-passagedata pid="3" name="ignora1" tags="" position="425,900" size="100,100"> &lt;==&gt;
@@ -133,7 +133,7 @@ He’s sitting near a slot. Next to him, another guy pretends to not notice you.
 [[Change direction|parco3]]</tw-passagedata><tw-passagedata pid="16" name="conv1.2" tags="" position="150,1225" size="100,100"> &lt;==&gt;
 The iPhone was hidden under the sheets. It&#39;s yours.
 Screen’s cracked but seems to work. You see some bad scratches on the back and it only has 8% battery.
-The number calling’s saved as Lore (Work). 
+The person calling is saved as Lore (Work). 
 
 //&#39;Yo, where you at? I’m out here at the betting shop.&#39;//
 
@@ -214,7 +214,7 @@ They leave.
 You hear the friend calling you a lame ass something.
 Lore takes you by the shoulder.
 
-//&#39;This is what I get for showing up? Hand the iPhone and get out.&#39;//
+//&#39;This is what I get for showing up? Hand me the phone and get out.&#39;//
 
 [[Do as he says|telefono2]]
 [[No, I won&#39;t|telefono1]]</tw-passagedata><tw-passagedata pid="27" name="telefono1" tags="" position="2200,50" size="100,100"> &lt;==&gt;
@@ -230,13 +230,13 @@ The duo walk off. You feel stupid.
 [[Go home|casa3]]</tw-passagedata><tw-passagedata pid="28" name="telefono2" tags="" position="1750,350" size="100,100"> &lt;==&gt;
 //&#39;Do you take fit pics with this? This scrap looks good only for doing lines.&#39;//
 
-He takes the iPhone and hand the blow.
+He takes the iPhone and hands you the blow.
 
 //&#39;Sorry but this is business.&#39;//
 
 He coughs.
 
-//&#39;See you later at the club. Don&#39;t overdo, ok?&#39;//
+//&#39;See you later at the club. Don&#39;t overdo it, ok?&#39;//
 
 They leave.
 
@@ -273,8 +273,8 @@ It&#39;s kicking. And it&#39;s almost over.
 [[Finish what you started|khole]]
 [[Stop]]
 (set: $k to false)</tw-passagedata><tw-passagedata pid="36" name="khole" tags="" position="1575,1100" size="100,100">&lt;==&gt;
-It goes the last line. 
-You are sure of floating even if you feel nauseous.
+There goes the last line.
+You are sure of floating even though you feel nauseous.
 Can&#39;t move your legs or arms. You simply stand still.
 
 [[Open your eyes|Try to puke]]</tw-passagedata><tw-passagedata pid="37" name="Stop" tags="" position="1825,975" size="100,100">&lt;==&gt;
@@ -287,9 +287,9 @@ You are not ready for an interaction yet.
 [[Yes... I mean, no...|continue]]
 (if: $tel is true)[ [[Give her the iPhone|continuetel]] ](if: $soldi is true)[ [[Give her the money|continuesoldi]] ]
 </tw-passagedata><tw-passagedata pid="38" name="Vomit" tags="" position="1550,1275" size="100,100"> &lt;==&gt;
-You bend over and puke some sort of pale liquid. No sound, no fragrance.
+You bend over and puke some sort of pale liquid. No sound, no smell.
 You are back from the trip. 
-There is a pack of cigs on the ground. You take it. 
+There is a pack of cigs on the ground. You take them. 
 
 [[You have to go somewhere|bar2]]
 [[You need the club|club]]
@@ -304,36 +304,36 @@ There are different rooms. The energy feels right.
 (if: $sigarette is true)[ [[Have a smoke]] ]</tw-passagedata><tw-passagedata pid="40" name="casa4" tags="" position="975,1650" size="100,100"> &lt;==&gt;
 You made it back without saying a single word. 
 You don&#39;t remember a face. Can’t even recall the road.
-There is your father at the door.
+Your father is at the door.
 
 [[Hi dad|end4]]
 [[Skip him and sleep|end4.2]]</tw-passagedata><tw-passagedata pid="41" name="end4.2" tags="" position="100,1750" size="100,100"> &lt;==&gt;
 You are in no condition for that kind of conversation now. The headache is the only thing you can experience. 
-You take the meds from the closet and play a podcast. You will not move from your bedroom for one week minimum. 
+You take the meds from the closet and play a podcast. You will not leave your bedroom for one week minimum. 
 
 [[End the day|start]]</tw-passagedata><tw-passagedata pid="42" name="end4" tags="" position="825,1975" size="100,100"> &lt;==&gt;
-//&#39;What is this rave you keep talking about in your chats?&#39;//
+//&#39;What is this MDMA you keep talking about in your chats?&#39;//
 
 You left the MacBook unlocked, again.
 
 [[Leave me alone!|end4.2]]</tw-passagedata><tw-passagedata pid="43" name="continue" tags="" position="2025,825" size="100,100">&lt;==&gt;
 The junkie mutters something but your brain is too messed up to understand anything.
 You&#39;re stumbling, legs heavy. 
-Not a single thought that makes sense. You have no clue of where you’re headed. 
+Not a single thought that makes sense. You have no clue where you’re headed. 
 Your stomach twists a little. Maybe you’re hungry. Maybe not. Hard to tell.
 
 [[Continue|bar2]]</tw-passagedata><tw-passagedata pid="44" name="continuetel" tags="" position="2025,1075" size="100,100">&lt;==&gt;
 //&#39;This is trash!&#39;//
 
 Even the junkie hates on your iPhone. That&#39;s depressing.
-You have no clue of where your next destination will be. 
+You have no clue where your next destination will be. 
 Your stomach twists a little. Maybe you’re hungry. Maybe not. Hard to tell.
 
 [[Continue|bar2]]
 (set: $tel to false)</tw-passagedata><tw-passagedata pid="45" name="continuesoldi" tags="" position="2025,950" size="100,100">&lt;==&gt;
 //&#39;Thanks.&#39;//
 
-You&#39;re stumbling, legs heavy. You have no clue of where you’re headed.
+You&#39;re stumbling, legs heavy. You have no clue where you’re headed.
 Your stomach twists a little. Maybe you’re hungry. Maybe not. Hard to tell.
 
 [[Continue|bar2]]
@@ -345,7 +345,7 @@ The barista looks at you like you have just landed from Mars.
 [[Leave|continue3]]</tw-passagedata><tw-passagedata pid="47" name="espresso" tags="" position="2150,475" size="100,100">&lt;==&gt;
 The cashier wants you out.
 
-//&#39;This is a coffe. We must do espresso.&#39;//
+//&#39;This is a coffee. We must do espresso.&#39;//
 
 They look at you wrong. This is terrible.
 
@@ -356,7 +356,7 @@ They are friends.
 
 [[Get in|macchina]]
 [[I have other things to do|ignore]]</tw-passagedata><tw-passagedata pid="49" name="Order" tags="" position="2150,600" size="100,100">&lt;==&gt;
-The coffe tastes like dishwater.
+The espresso tastes like dishwater.
 
 [[Leave|continue3]]
 (set: $lose to true)</tw-passagedata><tw-passagedata pid="50" name="continue3" tags="" position="2300,775" size="100,100">&lt;==&gt;
@@ -437,8 +437,8 @@ There are about thirty people. You feel watched.
 [[Browse the crowd|Continue]]
 (if: $sigarette is false)[ [[Look down]] ](if: $sigarette is true)[ [[Smoke]] ]
 </tw-passagedata><tw-passagedata pid="61" name="projects" tags="" position="2825,1150" size="100,100">&lt;==&gt;
-These buildings all looks the same. 
-You walk down a narrow hallway. You notices faces glaring at you from behind gated windows, and someone else trailing you from another corridor, keeping your pace.
+These buildings all look the same. 
+You walk down a narrow hallway. You notice faces glaring at you from behind gated windows, and someone else trailing you from another corridor, keeping your pace.
 
 //&#39;Stop. Who are you looking for?&#39;//
 
@@ -449,7 +449,7 @@ Some guy cut the way.
 
 The spotter opens a door that shows a stair going down to a basement. 
 The room is dim. The smell of food and something heavier hits you as soon as you step in. 
-The pusher is playing FIFA. Next to him, an egirl is slowly smoking a joint while lying on a sofa. A pitbull, sitting beside her, guards the door. 
+The dealer is playing FIFA. Next to him, a emo is slowly smoking a joint while lying on a sofa. A pitbull, sitting beside her, guards the door. 
 On the table there are tons of plastic bags and various weed buds in amounts you couldn&#39;t even begin to count. 
 
 [[How much for a gram of coke?|Pay2]]</tw-passagedata><tw-passagedata pid="63" name="Pay" tags="" position="2650,1575" size="100,100">&lt;==&gt;
@@ -463,7 +463,7 @@ They have what they wanted and you all are back in the car.
 [[Let&#39;s save it for the night|club]]
 [[Do one for the plot|bottaauto]]
 (set: $coco to true)</tw-passagedata><tw-passagedata pid="64" name="Try to puke" tags="" position="1400,1175" size="100,100">&lt;==&gt;
-You try to open your eyes, but they’re too heavy, like always. Each time you tell yourself you’ll manage end up in failure.
+You try to open your eyes, but they’re too heavy, like always. Each time you tell yourself you&#39;ll manage, you end up a failure.
 Beams of light slowly drift closer, then pull away. They look so real that you could probably touch them if you weren’t completely paralyzed.
 You think about your mom. Your father. You remember your first crush. Then the first time you had sex. It feels like you’re almost there doing it over again.
 You wish this moment could last forever.
