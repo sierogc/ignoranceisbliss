@@ -60,8 +60,8 @@ The place is a mess, like it&#39;s never been cleaned.
 It’s a studio, with just the kitchen and bathroom. No trace of the owner, this is more a stash than a home.
 You spot the front door and realise you&#39;re in the projects. You remember one of your childhood friends used to live with his mother on the same block.
 
-[[Call back Lore (Work)|conv2]]
 [[Anybody home?|calls]]
+[[Call back Lore (Work)|conv2]]
 [[Leave the apartment|esci]]</tw-passagedata><tw-passagedata pid="6" name="end" tags="" position="500,650" size="100,100"> &lt;==&gt;
 You took the bus and got back in less than an hour.
 Your headache is getting worse, but you have some meds in the closet.
@@ -402,8 +402,8 @@ The place is a mess. Looks like no one’s ever cleaned it.
 It’s a studio, with just the kitchen and bathroom. No trace of the owner, this is more a stash than a home.
 You spot the front door and realise you&#39;re in the projects. You remember one of your childhood friends used to live with his mother on the same block.
 
-[[Turn back and answer the call|conv1.2]]
 [[Anybody home?|callss]]
+[[Turn back and answer the call|conv1.2]]
 [[Leave and go home|end]]
 </tw-passagedata><tw-passagedata pid="57" name="conv1.3" tags="" position="425,1125" size="100,100"> &lt;==&gt;
 A distorted voice says:
@@ -865,10 +865,8 @@ The second.
 The third. 
 The fourth.
 The fifth.
-The sixth.
-You hear barking in the distance.
 
-[[Stay on guard|look]]</tw-passagedata><tw-passagedata pid="107" name="reply2" tags="" position="925,2800" size="100,100">&lt;==&gt;
+[[Too fast|look00]]</tw-passagedata><tw-passagedata pid="107" name="reply2" tags="" position="925,2800" size="100,100">&lt;==&gt;
 //&#39;You got a problem with that?&#39;//
 
 Lore is quiet. He already choose his role for the story. 
@@ -880,7 +878,7 @@ Now it&#39;s your turn.
 [[First dancefloor|first]]
 [[Second dancefloor|second]]
 [[Third dancefloor|third]]
-[[Mirror yourself|bath2]]</tw-passagedata><tw-passagedata pid="109" name="bath2" tags="" position="1250,2775" size="100,100">&lt;==&gt;
+[[Check yourself|bath2]]</tw-passagedata><tw-passagedata pid="109" name="bath2" tags="" position="1250,2775" size="100,100">&lt;==&gt;
 (if: $cocco is true)[It doesn&#39;t take long for the queue. Compared to the ones coming in and out, your style can&#39;t really compare, but that&#39;s okay. It is what it is.
 Just as you&#39;re about to close the door, you hear a knock.
 
@@ -888,7 +886,7 @@ Just as you&#39;re about to close the door, you hear a knock.
 
 Luca has already spilled some alcohol on his crop top. He hands you his phone and the cocaine.
 
-[[You have no choice|coke]]](else:)[You don&#39;t have to wait much. Compared to the ones coming in and out, your style can&#39;t really compare, but that&#39;s okay. It is what it is.
+[[You have no choice|coke]]](else:)[There is no queue. Everything is fast. Compared to the ones coming in and out, your style can&#39;t really compare, but that&#39;s okay. It is what it is.
 The face in the mirror is  the result of your choices.
 
 [[You like what you see|bath3]]]
@@ -910,7 +908,7 @@ A scream is enough for them to all jump on you. The first punch is from Lore. Af
 You hear the bouncers coming closer and a dog barking. Whose dog is this?
 
 [[A dog?|look]]</tw-passagedata><tw-passagedata pid="113" name="Dance" tags="" position="1525,3075" size="100,100">&lt;==&gt;
-The music is the ultimate zeitgeist. It&#39;s the best feeling there is. In your past life, you were definitely a musician.
+The music is the ultimate zeitgeist. It&#39;s the best feeling there is. In your past life, you were definitely an artist.
 
 [[Dance|look0]]</tw-passagedata><tw-passagedata pid="114" name="look0" tags="" position="1425,3350" size="100,100">&lt;==&gt;
 Sound is the only thing you need. What the whole world deserve.
@@ -956,22 +954,20 @@ There&#39;s nothing more to think about.
 [[Sleep|end5]]</tw-passagedata><tw-passagedata pid="124" name="callss" tags="" position="850,975" size="100,100">&lt;==&gt;
 No one&#39;s home. 
 
+[[Try again|callss2]]
 [[Turn back and answer the call|conv1.2]]
-[[Leave and go home|end]]
-[[Maybe they didn&#39;t hear|callss2]]</tw-passagedata><tw-passagedata pid="125" name="calls" tags="" position="725,1250" size="100,100">&lt;==&gt;
+[[Leave and go home|end]]</tw-passagedata><tw-passagedata pid="125" name="calls" tags="" position="725,1250" size="100,100">&lt;==&gt;
 No one home. 
 
+[[Try again|calls2]]
 [[Call back Lore (Work)|conv2]]
-[[Leave the apartment|esci]]
-[[Maybe they didn&#39;t hear|calls2]]</tw-passagedata><tw-passagedata pid="126" name="callss2" tags="" position="1075,1100" size="100,100">&lt;==&gt;
+[[Leave the apartment|esci]]</tw-passagedata><tw-passagedata pid="126" name="callss2" tags="" position="1075,1100" size="100,100">&lt;==&gt;
 Ain&#39;t nobody here.
 
-[[Try again|callss2]]
 [[Turn back and answer the call|conv1.2]]
 [[Leave and go home|end]]</tw-passagedata><tw-passagedata pid="127" name="calls2" tags="" position="925,1300" size="100,100">&lt;==&gt;
 Ain&#39;t nobody here.
 
-[[Try again|calls2]]
 [[Call back Lore (Work)|conv2]]
 [[Leave the apartment|esci]]
 </tw-passagedata><tw-passagedata pid="128" name="dances" tags="" position="1225,3500" size="100,100">&lt;==&gt;
@@ -981,7 +977,10 @@ A dog is barking.
 It hurts like hell. This cocaine is not good.
 You don&#39;t hear anything but barking.
 
-[[A dog in a club&#39;s bath?|look]]</tw-passagedata></tw-storydata>
+[[A dog in a club&#39;s bath?|look]]</tw-passagedata><tw-passagedata pid="130" name="look00" tags="" position="675,3175" size="100,100">&lt;==&gt;
+You hear barking in the distance.
+
+[[Stay on guard|look]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
