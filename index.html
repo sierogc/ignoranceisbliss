@@ -702,7 +702,8 @@ The person in the mirror is only ugly as you are.
 [[You like what you see|discuss]]
 [[You hate what you see|discuss]]
 </tw-passagedata><tw-passagedata pid="88" name="discuss" tags="" position="2050,3425" size="100,100">&lt;==&gt;
-As you&#39;re stepping out you hear a dog barking from the bedroom.
+That&#39;s how you always seen it.
+You hear a dog barking from the bedroom.
 This house somehow feels close to your memories. Or you are just high. 
 
 [[Check the couple|terrazza]]
@@ -744,7 +745,7 @@ No one is awake when you get back. (if: $denti is true)[You test the stolen toot
  ###Ignorance is Bliss
  ####A game by Guido Corbisiero.
 
- [[Wake up|start]]</tw-passagedata><tw-passagedata pid="95" name="Have a smoke" tags="" position="1600,1825" size="100,100"> &lt;==&gt;
+ [[Wake up|start1]]</tw-passagedata><tw-passagedata pid="95" name="Have a smoke" tags="" position="1600,1825" size="100,100"> &lt;==&gt;
 This cig feels like inhaling cotton. 
 People are coming in and out and you got lost. Lots of basic with some cool mixed in. 
 Lore smiles at you.
@@ -887,7 +888,7 @@ Just as you&#39;re about to close the door, you hear a knock.
 Luca has already spilled some alcohol on his crop top. He hands you his phone and the cocaine.
 
 [[You have no choice|coke]]](else:)[There is no queue. Everything is fast. Compared to the ones coming in and out, your style can&#39;t really compare, but that&#39;s okay. It is what it is.
-The face in the mirror is  the result of your choices.
+You&#39;re wasting away. You could see it in your face and the mirror is  the result of your choices.
 
 [[You like what you see|bath3]]]
 [[You hate what you see|bath3]]
@@ -896,7 +897,7 @@ It&#39;s the biggest line you have ever seen. How fast life changes.
 You love CK. 
 
 [[Sniff|lookk]]</tw-passagedata><tw-passagedata pid="111" name="bath3" tags="" position="1200,3125" size="100,100">&lt;==&gt;
-You need a reality check.
+If it is like that the whole time, you will be alright.
 
 [[First dancefloor|first]]
 [[Second dancefloor|second]]
@@ -941,11 +942,11 @@ Teeth clenched.
 [[Run|run3]]</tw-passagedata><tw-passagedata pid="120" name="run3" tags="" position="1050,4100" size="100,100">&lt;==&gt;
 He is fast and you are slow.
 
-[[Run anyway|run4]]</tw-passagedata><tw-passagedata pid="121" name="run4" tags="" position="1050,4225" size="100,100">&lt;==&gt;
+[[Nothing gonna save you or stop him|run4]]</tw-passagedata><tw-passagedata pid="121" name="run4" tags="" position="1050,4225" size="100,100">&lt;==&gt;
 You&#39;re falling into the black hole. 
 
 [[Yes, you are|run5]]</tw-passagedata><tw-passagedata pid="122" name="run5" tags="" position="1050,4350" size="100,100">&lt;==&gt;
-You&#39;re alone.
+You&#39;ve been alone for the longest.
 The same as always.
 
 [[You made it like this|run6]]</tw-passagedata><tw-passagedata pid="123" name="run6" tags="" position="1050,4475" size="100,100">&lt;==&gt;
@@ -980,7 +981,24 @@ You don&#39;t hear anything but barking.
 [[A dog in a club&#39;s bath?|look]]</tw-passagedata><tw-passagedata pid="130" name="look00" tags="" position="675,3175" size="100,100">&lt;==&gt;
 You hear barking in the distance.
 
-[[Stay on guard|look]]</tw-passagedata></tw-storydata>
+[[Stay on guard|look]]</tw-passagedata><tw-passagedata pid="131" name="start1" tags="" position="200,475" size="100,100"> &lt;==&gt;
+It&#39;s (current-time:).
+You&#39;ve woken up in a stranger&#39;s bed, fully clothed, with no memory of how you got there. You&#39;ve been here before.
+You have a throbbing headache. 
+There is an iPhone ringing somewhere. 
+
+[[Find the phone|cerca]]
+[[Let it ring|ignora2]]
+(set: $soldi to true)
+(set: $tel to true)
+(set: $k to false)
+(set: $lose to false)
+(set: $coco to false)
+(set: $friends to false)
+(set: $lore to false)
+(set: $sigarette to false)
+(set: $denti to false)
+(set: $lore to false)</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
